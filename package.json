@@ -1,0 +1,23 @@
+{
+  "name": "fish",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn parcel index.html --host 0.0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkaraChen/fish.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkaraChen/fish/issues"
+  },
+  "homepage": "https://github.com/AkaraChen/fish#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  }
+}
