@@ -1,0 +1,56 @@
+@import url(../colors.less);
+@import url(../defines.less);
+
+button {
+    background-color: @light;
+    border: none;
+    color: @primary;
+    border-radius: @radius;
+    font-size: 16px;
+    display: inline-flex;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    height: 40px;
+    align-items: center;
+    transition: 0.5s all;
+
+    &:hover {
+        background-color: @light-deep;
+    }
+}
+
+button.primary {
+    background-color: @primary;
+    color: white;
+
+    &:hover {
+        background-color: @primary-deep;
+    }
+}
+
+button.cyan {
+    background-color: @cyan;
+    color: white;
+
+    &:hover {
+        background-color: @cyan-deep;
+    }
+}
+
+button.success {
+    background-color: @green;
+    color: white;
+
+    &:hover {
+        background-color: @green-deep;
+    }
+}
+
+button.error {
+    background-color: @red;
+    color: white;
+
+    &:hover {
+        background-color: @red-deep;
+    }
+}

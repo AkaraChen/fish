@@ -2,13 +2,15 @@
 
 Build more pages with less CSS code.
 
-## Test
+## Dev
 
 ```shell
-yarn
-yarn test
+pnpm install
+pnpm run dev
 ```
 
 ## Build
 
-undefined
+```shell
+pnpm run build
+```
