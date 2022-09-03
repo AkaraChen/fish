@@ -1,3 +1,4 @@
+@import url(../normalize.css);
 :root {
   box-sizing: border-box;
 }
@@ -163,10 +164,12 @@ table th {
 .container-lg {
   margin: 0 auto;
   max-width: 1200px;
+  padding: 20px;
 }
 .container-sm {
   margin: 0 auto;
   max-width: 768px;
+  padding: 20px;
 }
 .flex {
   display: flex;
@@ -355,6 +358,7 @@ input.success::placeholder {
 @media (prefers-color-scheme: dark) {
   input {
     background-color: #34495e;
+    color: white;
   }
 }
 label {
