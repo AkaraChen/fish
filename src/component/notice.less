@@ -9,13 +9,22 @@
 
     &.error {
         border-color: @red;
+
+        @media (prefers-color-scheme: dark) {
+            border-color: @red-deep;
+        }
     }
 
     &.success {
         border-color: @green;
+
+        @media (prefers-color-scheme: dark) {
+            border-color: @green-deep;
+        }
     }
 
     @media (prefers-color-scheme: dark) {
-        background-color: @dark;
+        border-color: @primary-deep;
+        background-color: @dark-deep;
     }
 }

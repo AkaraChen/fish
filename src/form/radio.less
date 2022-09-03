@@ -1,0 +1,29 @@
+@import url(../colors.less);
+
+input[type="radio"] {
+    display: inline;
+    outline: none;
+    width: 1em;
+    height: 1em;
+}
+
+input[type="radio"]+label {
+    display: inline;
+    margin: 0;
+}
+
+input[type="radio"]::before {
+    content: "";
+    display: block;
+    left: 0;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: solid 0.1em @light-deep;
+}
+
+input[type="radio"]:checked:before {
+    border: solid 0.25em @primary;
+    background-color: white;
+}
