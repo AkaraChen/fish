@@ -1,5 +1,6 @@
 @import url(../colors.less);
 @import url(../defines.less);
+@import url(../typography/size.less);
 
 input {
     padding: 10px;
@@ -9,7 +10,7 @@ input {
     border-radius: @radius;
     caret-color: gray;
     font-size: 16px;
-    transform: all 0.5s;
+    display: block;
 
     &:focus {
         outline: @primary 2px solid;
@@ -32,4 +33,13 @@ input {
     input {
         background-color: @dark;
     }
+}
+
+label {
+    margin-left: 0.25em;
+    font-size: var(--font-size);
+}
+
+label+input {
+    margin-top: 0.5em;
 }
