@@ -1,27 +1,118 @@
-@size-lg: 19px;
-@size-md: 18px;
-@size-sm: 17px;
+:root {
+    --size-lg: 17px;
+    --size-md: 16.5px;
+    --size-sm: 16px;
 
-@h1-size-lg: 38px;
-@h1-size-md: 36px;
-@h1-size-sm: 34px;
+    --h1-size-lg: 32px;
+    --h1-size-md: 28px;
+    --h1-size-sm: 24px;
 
-@h2-size-lg: 33.25px;
-@h2-size-md: 31.5px;
-@h2-size-sm: 29px;
+    --h2-size-lg: 22px;
+    --h2-size-md: 20px;
+    --h2-size-sm: 18px;
 
-@h3-size-lg: 28.5px;
-@h3-size-md: 27px;
-@h3-size-sm: 25.5px;
+    --h3-size-lg: 21px;
+    --h3-size-md: 19px;
+    --h3-size-sm: 17px;
 
-@h4-size-lg: 23.75px;
-@h4-size-md: 22.5px;
-@h4-size-sm: 21.25px;
+    --h4-size-lg: 18px;
+    --h4-size-md: 17.5px;
+    --h4-size-sm: 17px;
 
-@h5-size-lg: 21.375px;
-@h5-size-md: 20.25px;
-@h5-size-sm: 19.125px;
+    --h5-size-lg: 18px;
+    --h5-size-md: 17.5px;
+    --h5-size-sm: 17px;
 
-@h6-size-lg: @size-lg;
-@h6-size-md: @size-md;
-@h6-size-sm: @size-sm;
+    --h6-size-lg: var(--size-lg);
+    --h6-size-md: var(--size-md);
+    --h6-size-sm: var(--size-sm);
+
+    --font-size: var(--size-sm);
+
+    @media screen and (min-width: 768px) {
+        --font-size: var(--size-md);
+    }
+
+    @media screen and (min-width: 1200px) {
+        --font-size: var(--size-lg);
+    }
+
+    p,
+    h6 {
+        --font-size: var(--size-sm);
+
+        @media screen and (min-width: 768px) {
+            --font-size: var(--size-md);
+        }
+
+        @media screen and (min-width: 1200px) {
+            --font-size: var(--size-lg);
+        }
+
+    }
+
+    h1 {
+        --h1-size: var(--h1-size-sm);
+
+        @media screen and (min-width: 768px) {
+            --h1-size: var(--h1-size-md);
+        }
+
+        @media screen and (min-width: 1200px) {
+            --h1-size: var(--h1-size-lg);
+        }
+
+    }
+
+    h2 {
+        --h2-size: var(--h2-size-sm);
+
+        @media screen and (min-width: 768px) {
+            --h2-size: var(--h2-size-md);
+        }
+
+        @media screen and (min-width: 1200px) {
+            --h2-size: var(--h2-size-lg);
+        }
+
+    }
+
+    h3 {
+        --h3-size: var(--h3-size-sm);
+
+        @media screen and (min-width: 768px) {
+            --h3-size: var(--h3-size-md);
+        }
+
+        @media screen and (min-width: 1200px) {
+            --h3-size: var(--h3-size-lg);
+        }
+
+    }
+
+    h4 {
+        --h4-size: var(--h4-size-sm);
+
+        @media screen and (min-width: 768px) {
+            --h4-size: var(--h4-size-md);
+        }
+
+        @media screen and (min-width: 1200px) {
+            --h4-size: var(--h4-size-lg);
+        }
+
+    }
+
+    h5 {
+        --h5-size: var(--h5-size-sm);
+
+        @media screen and (min-width: 768px) {
+            --h5-size: var(--h5-size-md);
+        }
+
+        @media screen and (min-width: 1200px) {
+            --h5-size: var(--h5-size-lg);
+        }
+
+    }
+}

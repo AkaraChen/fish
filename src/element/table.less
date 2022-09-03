@@ -1,0 +1,30 @@
+@import url(../colors.less);
+
+table {
+    border-collapse: collapse;
+    border: solid @light;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(245, 245, 245, 0.7);
+}
+
+table td,
+table th {
+    padding: 8px;
+}
+
+table th {
+    text-align: start;
+}
+
+@media (prefers-color-scheme: dark) {
+    table {
+        background-color: @dark;
+        border: solid @grey-deep;
+    }
+
+    table tr:nth-child(even) {
+        background-color: @dark-deep;
+    }
+}

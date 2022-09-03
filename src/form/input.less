@@ -1,0 +1,35 @@
+@import url(../colors.less);
+@import url(../defines.less);
+
+input {
+    padding: 10px;
+    margin: 1em 0.25em;
+    border: none;
+    outline: rgba(0, 0, 0, 0.3) 1px solid;
+    border-radius: @radius;
+    caret-color: gray;
+    font-size: 16px;
+    transform: all 0.5s;
+
+    &:focus {
+        outline: @primary 2px solid;
+    }
+
+    &::placeholder {
+        padding-left: 5px;
+    }
+
+    &.error {
+        outline: 2px @red solid;
+    }
+
+    &.success {
+        outline: 2px @green solid;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    input {
+        background-color: @dark;
+    }
+}
