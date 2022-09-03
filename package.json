@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel page/index.html",
-    "build": "lessc src/index.less fish.css"
+    "build": "lessc src/index.less fish.css",
+    "build:preview": "parcel build page/index.html"
   },
   "repository": {
     "type": "git",
