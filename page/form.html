@@ -11,11 +11,15 @@
 
 <body>
     <div class="container-sm">
-        <form>
+        <form style="width:400px;margin: 1em auto;">
             <label for="name">First Name</label>
-            <input name="name" type="text">
-            <input class="success" type="text">
-            <input type="text" disabled>
+            <input name="name" type="text" class="w-full" placeholder="Placeholder Test">
+            <label for="name">Last Name</label>
+            <input class="success w-full" type="text">
+            <label for="name">Error</label>
+            <input class="error w-full" type="text" placeholder="Placeholder Error">
+            <label for="name">Disabled</label>
+            <input type="text" class="w-full" disabled>
             <button type="submit">Submit</button>
             <button class="cyan" type="reset">Reset</button>
         </form>
