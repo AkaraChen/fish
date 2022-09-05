@@ -1,0 +1,14 @@
+@import url(../colors.less);
+@import url(../defines.less);
+
+details {
+    background-color: @light;
+    padding: 1em;
+    border-radius: @radius;
+}
+
+@media (prefers-color-scheme: dark) {
+    details {
+        background-color: @dark;
+    }
+}

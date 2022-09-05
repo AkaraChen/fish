@@ -6,46 +6,188 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/index.less">
-    <title>Document</title>
+    <title>Fish.css</title>
 </head>
 
 <body>
     <div class="container-sm">
-        <hgroup>
-            <h1>Typography Lab</h1>
-            <h2>Test Content</h2>
-        </hgroup>
-        <blockquote>Lorem ipsum, dolor sit amet consectetur.</blockquote>
-        <article>
-            <h2>Blog Title</h2>
-            <p>Lorem ipsum dolor sit amet consectetur <mark>adipisicing</mark> elit. Repellat totam, quod natus culpa
-                quasi
-                nostrum
-                <a href="./form.html">Form</a>,
-                inventore <code>console.log</code> voluptatem <b>repellendus</b> alias <u>molestiae</u> nulla magni
-                <kbd>Ctrl + S</kbd>
-                odit porro
-                fugiat mollitia
-                nobis.
-            </p>
-        </article>
+        <header>
+            <hgroup>
+                <h1>Fish.css</h1>
+                <h2>A CSS library focused on improving the default appearance of HTML.</h2>
+            </hgroup>
+        </header>
 
-        <table>
-            <tbody>
-                <tr>
-                    <td>Header 1</td>
-                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
-                </tr>
-                <tr>
-                    <td>Header 2</td>
-                    <td>itaque alias, tenetur delectus illo facilis ab nam deserunt.</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="notice">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio harum vero aliquid deserunt fugit
-            autem, debitis culpa, quam tempore quae illum repellendus neque! Molestias dolorem pariatur et earum eum.
-        </div>
+        <main>
+            <h2>Introduction</h2>
+            <p>
+                Fish.css is a CSS library focused on improving the default appearance of HTML, which can be used on any
+                html-based document. It allows you to quickly give your website a modern look without having to start
+                from
+                scratch.
+            </p>
+
+            <h2>Installation</h2>
+            <p>Fish.css is publish on npm, so you can install with any package manager you like:</p>
+            <pre><code>pnpm add @akrc/fish</code></pre>
+            <p>Or you can import Fish.css by CDN:</p>
+            <pre><code lang="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/AkaraChen/fish@latest/fish.css&quot;&gt;</code></pre>
+
+            <h2>Usage</h2>
+            <p>Just write HTML tags and organise the HTML structure according to web standards. This page uses Fish.css,
+                which doesn't write any className (except <code>.container</code> class) or css!</p>
+
+            <h2>Elements</h2>
+
+            <h3>Heading</h3>
+            <details>
+                <summary>
+                    Collapsed content
+                </summary>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+            </details>
+
+            <h3>Paragraph</h3>
+            <details>
+                <summary>
+                    Collapsed content
+                </summary>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et rerum reiciendis at, quia perferendis
+                    iure
+                    unde libero facere corporis, praesentium iusto illo similique est vitae deserunt. Officia aspernatur
+                    at
+                    exercitationem!</p>
+            </details>
+
+            <h3>List</h3>
+            <details>
+                <summary>
+                    Collapsed content
+                </summary>
+                <ol>
+                    <li>Mix flour, baking powder, sugar, and salt.</li>
+                    <li>In another bowl, mix eggs, milk, and oil.</li>
+                    <li>Stir both mixtures together.</li>
+                    <li>Fill muffin tray 3/4 full.</li>
+                    <li>Bake for 20 minutes.</li>
+                </ol>
+                <ul>
+                    <li>first item</li>
+                    <li>second item</li>
+                    <li>third item</li>
+                </ul>
+            </details>
+
+            <h3>Table</h3>
+            <details>
+                <summary>
+                    Collapsed content
+                </summary>
+                <table>
+                    <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                    </tr>
+                    <tr>
+                        <td>Ernst Handel</td>
+                        <td>Roland Mendel</td>
+                        <td>Austria</td>
+                    </tr>
+                    <tr>
+                        <td>Island Trading</td>
+                        <td>Helen Bennett</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>Laughing Bacchus Winecellars</td>
+                        <td>Yoshi Tannamuri</td>
+                        <td>Canada</td>
+                    </tr>
+                    <tr>
+                        <td>Magazzini Alimentari Riuniti</td>
+                        <td>Giovanni Rovelli</td>
+                        <td>Italy</td>
+                    </tr>
+                </table>
+            </details>
+
+            <h3>Link</h3>
+            <details>
+                <summary>Collapsed content</summary>
+                <p>There's a link point to <a href="https://baidu.com">baidu.com</a></p>
+            </details>
+
+            <h3>Blockquote</h3>
+            <details>
+                <summary>
+                    Collapsed content
+                </summary>
+                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea est, natus, quis a optio illum
+                    tempora neque id fuga aliquid possimus! Laboriosam inventore illum rem repellat qui adipisci totam
+                    consequuntur.</blockquote>
+            </details>
+
+            <h3>Form</h3>
+            <details>
+                <summary>
+                    Collapsed content
+                </summary>
+                <form>
+                    <label for="name">First Name</label>
+                    <input name="name" type="text" placeholder="Placeholder Test">
+                    <label for="fruit">Fruit</label>
+                    <select id="fruit" required>
+                        <option value="" selected>Select a fruit…</option>
+                        <option>…</option>
+                    </select>
+                    <fieldset>
+                        <legend>Size</legend>
+                        <input type="radio" id="small" name="size" value="small" checked>
+                        <label for="small">
+                            Small
+                        </label>
+                        <input type="radio" id="medium" name="size" value="medium">
+                        <label for="medium">
+                            Medium
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Choose your monster's features:</legend>
+
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" checked>
+                            <label for="scales">Scales</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="horns" name="horns">
+                            <label for="horns">Horns</label>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
+            </details>
+        </main>
+
+        <footer>
+            <p>2022-PRESENT © Akara Chen</p>
+        </footer>
     </div>
 </body>
 

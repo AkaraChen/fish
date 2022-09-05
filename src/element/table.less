@@ -1,17 +1,26 @@
 @import url(../colors.less);
+@import url(../defines.less);
 
 table {
     border-collapse: collapse;
     border: solid @light;
+    margin: 0.5em auto;
+    background-color: white;
+}
+
+table tbody {
+    border: none;
 }
 
 table tr:nth-child(even) {
     background-color: rgba(245, 245, 245, 0.7);
+    border: none;
 }
 
 table td,
 table th {
     padding: 8px;
+    border: none;
 }
 
 table th {
@@ -21,10 +30,15 @@ table th {
 @media (prefers-color-scheme: dark) {
     table {
         background-color: @dark;
-        border-color: @dark;
+        border: none;
     }
 
     table tr:nth-child(even) {
         background-color: @dark-deep;
     }
+}
+
+table th {
+    text-align: center;
+    font-weight: normal;
 }

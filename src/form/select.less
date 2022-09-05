@@ -1,11 +1,21 @@
+@import url(../colors.less);
+
 select {
     display: block;
     width: 100%;
-    padding: 0.5em;
+    height: 2.1em;
     margin: 1em 0.25em;
     border: none;
     outline: rgba(0, 0, 0, 0.3) 1px solid;
     border-radius: @radius;
     caret-color: gray;
     font-size: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+    select {
+        background-color: @dark-deep;
+        color: @light;
+        border-color: transparent;
+    }
 }
