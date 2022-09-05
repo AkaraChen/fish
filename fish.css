@@ -421,7 +421,7 @@ template {
 :root {
   box-sizing: border-box;
   font-size: var(--font-size);
-  font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  font-family: PingFang SC, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
 }
 *,
 *::before,
@@ -747,6 +747,7 @@ select {
   border-radius: 4px;
   caret-color: gray;
   font-size: 16px;
+  -webkit-appearance: none;
 }
 @media (prefers-color-scheme: dark) {
   select {
