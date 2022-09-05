@@ -2,31 +2,24 @@
 
 Build more pages with less CSS code.
 
-## Use
+## Introduction
 
-### By CDN
+Fish.css is a CSS library focused on improving the default appearance of HTML, which can be used on any html-based document. It allows you to quickly give your website a modern look without having to start from scratch.
+
+### Installation
+
+Fish.css is publish on npm, so you can install with any package manager you like:
+
+```shelll
+`pnpm add @akrc/fish`
+```
+
+Or you can import Fish.css by CDN:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AkaraChen/fish@latest/fish.css">
 ```
 
-### By bundler
+### Usage
 
-```js
-> pnpm add @akrc/fish
-
-import '@akrc/fish/fish.css'
-```
-
-## Dev
-
-```shell
-pnpm install
-pnpm run dev
-```
-
-## Build
-
-```shell
-pnpm run build
-```
+Just write HTML tags and organise the HTML structure according to web standards. This page uses Fish.css, which doesnt write any className (except `.container` class) or css!
