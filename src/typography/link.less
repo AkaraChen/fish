@@ -1,11 +1,35 @@
 @import url(../colors.less);
+@import url(../defines.less);
 
 a {
     color: @primary;
-    text-decoration: none;
+    display: block;
+    background-color: @light;
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: @radius;
+    transition: background-color 0.25s;
 }
 
-a::after {
+a:hover {
+    background-color: @light-deep;
+}
+
+@media (prefers-color-scheme: dark) {
+    p a:hover {
+        background-color: @dark-deep;
+    }
+}
+
+p a {
+    display: inline-block;
+    color: @primary;
+    text-decoration: none;
+    background-color: inherit;
+    border-radius: 999px;
+}
+
+p a::after {
     content: "↗";
     left: 0;
     top: 0;

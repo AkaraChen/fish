@@ -667,9 +667,29 @@ mark {
 }
 a {
   color: #3498db;
-  text-decoration: none;
+  display: block;
+  background-color: #ecf0f1;
+  width: fit-content;
+  padding: 0.5em;
+  border-radius: 4px;
+  transition: background-color 0.25s;
 }
-a::after {
+a:hover {
+  background-color: #bdc3c7;
+}
+@media (prefers-color-scheme: dark) {
+  p a:hover {
+    background-color: #2c3e50;
+  }
+}
+p a {
+  display: inline-block;
+  color: #3498db;
+  text-decoration: none;
+  background-color: inherit;
+  border-radius: 999px;
+}
+p a::after {
   content: "↗";
   left: 0;
   top: 0;
