@@ -15,6 +15,7 @@ a:hover {
     background-color: @light-deep;
 }
 
+li a,
 p a {
     display: inline;
     color: @primary;
@@ -23,10 +24,13 @@ p a {
     padding: 0;
 }
 
+
+li a:hover,
 p a:hover {
     background-color: transparent;
 }
 
+li a::after,
 p a::after {
     content: "↗";
     left: 0;

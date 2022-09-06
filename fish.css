@@ -678,6 +678,7 @@ a {
 a:hover {
   background-color: #bdc3c7;
 }
+li a,
 p a {
   display: inline;
   color: #3498db;
@@ -685,9 +686,11 @@ p a {
   background-color: inherit;
   padding: 0;
 }
+li a:hover,
 p a:hover {
   background-color: transparent;
 }
+li a::after,
 p a::after {
   content: "↗";
   left: 0;
