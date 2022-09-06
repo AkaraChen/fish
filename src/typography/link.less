@@ -15,18 +15,16 @@ a:hover {
     background-color: @light-deep;
 }
 
-@media (prefers-color-scheme: dark) {
-    p a:hover {
-        background-color: @dark-deep;
-    }
-}
-
 p a {
-    display: inline-block;
+    display: inline;
     color: @primary;
     text-decoration: none;
     background-color: inherit;
-    border-radius: 999px;
+    padding: 0;
+}
+
+p a:hover {
+    background-color: transparent;
 }
 
 p a::after {
