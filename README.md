@@ -11,7 +11,7 @@ Fish.css is a CSS library focused on improving the default appearance of HTML, w
 Fish.css is publish on npm, so you can install with any package manager you like:
 
 ```shelll
-`pnpm add @akrc/fish`
+pnpm add @akrc/fish
 ```
 
 Or you can import Fish.css by CDN:
