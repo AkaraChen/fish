@@ -3,36 +3,36 @@
 
 a {
     color: @primary;
-    display: block;
-    background-color: @light;
-    width: fit-content;
-    padding: 0.5em;
-    border-radius: @radius;
-    transition: background-color 0.25s;
-}
-
-a:hover {
-    background-color: @light-deep;
-}
-
-li a,
-p a {
-    display: inline;
-    color: @primary;
     text-decoration: none;
     background-color: inherit;
     padding: 0;
 }
 
 
-li a:hover,
-p a:hover {
+a:hover {
     background-color: transparent;
 }
 
-li a::after,
-p a::after {
+a::after {
     content: "↗";
     left: 0;
     top: 0;
+}
+
+a.button {
+    color: @primary;
+    display: block;
+    background-color: @light;
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: @radius;
+    transition: background-color 0.25s;
+
+    &::after {
+        display: none;
+    }
+
+    &:hover {
+        background-color: @light-deep;
+    }
 }

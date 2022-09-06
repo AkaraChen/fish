@@ -668,6 +668,20 @@ mark {
 }
 a {
   color: #3498db;
+  text-decoration: none;
+  background-color: inherit;
+  padding: 0;
+}
+a:hover {
+  background-color: transparent;
+}
+a::after {
+  content: "↗";
+  left: 0;
+  top: 0;
+}
+a.button {
+  color: #3498db;
   display: block;
   background-color: #ecf0f1;
   width: fit-content;
@@ -675,26 +689,11 @@ a {
   border-radius: 4px;
   transition: background-color 0.25s;
 }
-a:hover {
+a.button::after {
+  display: none;
+}
+a.button:hover {
   background-color: #bdc3c7;
-}
-li a,
-p a {
-  display: inline;
-  color: #3498db;
-  text-decoration: none;
-  background-color: inherit;
-  padding: 0;
-}
-li a:hover,
-p a:hover {
-  background-color: transparent;
-}
-li a::after,
-p a::after {
-  content: "↗";
-  left: 0;
-  top: 0;
 }
 ul,
 ol {
