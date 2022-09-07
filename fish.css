@@ -304,11 +304,11 @@ template {
   display: none;
 }
 :root {
-  --size-lg: 16px;
-  --size-md: 15.5px;
-  --size-sm: 15px;
-  --h1-size-lg: 32px;
-  --h1-size-md: 28px;
+  --size-lg: 17px;
+  --size-md: 16.5px;
+  --size-sm: 16px;
+  --h1-size-lg: 28px;
+  --h1-size-md: 26px;
   --h1-size-sm: 24px;
   --h2-size-lg: 22px;
   --h2-size-md: 21px;
@@ -422,6 +422,7 @@ template {
   box-sizing: border-box;
   font-size: var(--font-size);
   font-family: PingFang SC, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  letter-spacing: 0.125px;
 }
 *,
 *::before,
@@ -595,7 +596,7 @@ table th {
 }
 details {
   margin: 0.5em 0;
-  background-color: #ecf0f1;
+  background-color: #f5f6fa;
   padding: 1em;
   border-radius: 4px;
 }
@@ -648,9 +649,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 1.2em;
-  margin-bottom: 0.6em;
-  line-height: 1.35;
+  margin: 0.5em 0;
+  line-height: 1.5;
 }
 h1,
 h2,
@@ -671,6 +671,7 @@ a {
   text-decoration: none;
   background-color: inherit;
   padding: 0;
+  font-size: var(--font-size);
 }
 a:hover {
   background-color: transparent;
@@ -698,6 +699,10 @@ a.button:hover {
 ul,
 ol {
   margin: 1em;
+  font-size: var(--font-size);
+}
+li::marker {
+  font-size: inherit;
 }
 form {
   margin: 0.5em;
