@@ -1,9 +1,9 @@
 {
   "name": "@akrc/fish",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "",
   "scripts": {
-    "dev": "parcel page/index.html --host 0.0.0.0",
+    "dev": "parcel page/index.html",
     "build": "lessc src/index.less fish.css",
     "build:preview": "parcel build page/index.html"
   },
