@@ -22,4 +22,4 @@ Or you can import Fish.css by CDN:
 
 ### Usage
 
-Just write HTML tags and organise the HTML structure according to web standards. This page uses Fish.css, which doesnt write any className (except `.container` class) or css!
+Just write HTML tags and organise the HTML structure according to web standards.

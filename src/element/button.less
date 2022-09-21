@@ -1,11 +1,8 @@
-@import url(../colors.less);
-@import url(../defines.less);
-
 button {
-    background-color: @light;
+    background-color: var(--light);
     border: none;
-    color: @primary;
-    border-radius: @radius;
+    color: var(--primary);
+    border-radius: var(--radius);
     font-size: 16px;
     display: inline-flex;
     padding-inline-start: 16px;
@@ -16,42 +13,42 @@ button {
     margin: 0 0.125em;
 
     &:hover {
-        background-color: @light-deep;
+        background-color: var(--light-deep);
     }
 }
 
 button.primary {
-    background-color: @primary;
+    background-color: var(--primary);
     color: white;
 
     &:hover {
-        background-color: @primary-deep;
+        background-color: var(--primary-deep);
     }
 }
 
 button.cyan {
-    background-color: @cyan;
+    background-color: var(--cyan);
     color: white;
 
     &:hover {
-        background-color: @cyan-deep;
+        background-color: var(--cyan-deep);
     }
 }
 
 button.success {
-    background-color: @green;
+    background-color: var(--green);
     color: white;
 
     &:hover {
-        background-color: @green-deep;
+        background-color: var(--green-deep);
     }
 }
 
 button.error {
-    background-color: @red;
+    background-color: var(--red);
     color: white;
 
     &:hover {
-        background-color: @red-deep;
+        background-color: var(--red-deep);
     }
 }

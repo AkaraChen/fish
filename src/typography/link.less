@@ -1,8 +1,5 @@
-@import url(../colors.less);
-@import url(../defines.less);
-
 a {
-    color: @primary;
+    color: var(--primary);
     text-decoration: none;
     background-color: inherit;
     padding: 0;
@@ -21,12 +18,12 @@ a::after {
 }
 
 a.button {
-    color: @primary;
+    color: var(--primary);
     display: block;
-    background-color: @light;
+    background-color: var(--light);
     width: fit-content;
     padding: 0.5em;
-    border-radius: @radius;
+    border-radius: var(--radius);
     transition: background-color 0.25s;
 
     &::after {
@@ -34,6 +31,6 @@ a.button {
     }
 
     &:hover {
-        background-color: @light-deep;
+        background-color: var(--light-deep);
     }
 }

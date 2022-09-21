@@ -1,9 +1,6 @@
-@import url(../colors.less);
-@import url(../defines.less);
-
 table {
     border-collapse: collapse;
-    border: solid @light;
+    border: solid var(--light);
     margin: 0.5em auto;
     background-color: white;
 }
@@ -34,12 +31,12 @@ table th {
 
 @media (prefers-color-scheme: dark) {
     table {
-        background-color: @dark;
+        background-color: var(--dark);
         border: none;
     }
 
     table tr:nth-child(even) {
-        background-color: @dark-deep;
+        background-color: var(--dark-deep);
     }
 }
 

@@ -1,25 +1,20 @@
-@import url(../colors.less);
-@import url(../typography/size.less);
-@import url(../defines.less);
-@import url(../typography/font.less);
-
 code,
 pre {
-    border-radius: @radius;
-    font-family: @code-font;
+    border-radius: var(--radius);
+    font-family: var(--code-font);
 }
 
 code {
     display: inline-block;
     padding: 0.125em 0.5em;
-    background-color: @light;
+    background-color: var(--light);
     font-size: var(--font-size);
-    color: @grey-deep;
+    color: var(--grey-deep);
 }
 
 pre code {
     background-color: black;
-    color: @light;
+    color: var(--light);
     width: fit-content;
     margin: 0;
     padding: 0.75em;
