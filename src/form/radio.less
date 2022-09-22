@@ -6,7 +6,7 @@ input[type="radio"] {
     margin: 0.75em 0;
 }
 
-input[type="radio"]+label {
+input[type="radio"] + label {
     display: inline;
     margin: 0;
 }
@@ -22,7 +22,7 @@ input[type="radio"]::before {
     border: solid 0.1em var(--light-deep);
 }
 
-input[type="radio"]:checked:before {
+input[type="radio"]:checked::before {
     border: solid 0.25em var(--primary);
     background-color: white;
 }

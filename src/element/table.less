@@ -6,7 +6,7 @@ table {
 }
 
 table thead {
-    background-color: rgba(245, 245, 245, 0.7);
+    background-color: rgb(245 245 245 / 70%);
     border: none;
 }
 
@@ -15,7 +15,7 @@ table tbody {
 }
 
 table tr:nth-child(even) {
-    background-color: rgba(245, 245, 245, 0.7);
+    background-color: rgb(245 245 245 / 70%);
     border: none;
 }
 
@@ -27,6 +27,8 @@ table th {
 
 table th {
     text-align: start;
+    text-align: center;
+    font-weight: normal;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,9 +40,4 @@ table th {
     table tr:nth-child(even) {
         background-color: var(--dark-deep);
     }
-}
-
-table th {
-    text-align: center;
-    font-weight: normal;
 }
