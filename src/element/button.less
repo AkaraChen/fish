@@ -1,54 +1,64 @@
 button {
-    background-color: var(--light);
-    border: none;
-    color: var(--primary);
-    border-radius: var(--radius);
-    font-size: 16px;
-    display: inline-flex;
-    padding-inline-start: 16px;
-    padding-inline-end: 16px;
-    height: 40px;
-    align-items: center;
-    transition: 0.5s background-color;
-    margin: 0 0.125em;
+  background-color: var(--light);
+  border: none;
+  color: var(--primary);
+  border-radius: var(--radius);
+  font-size: 16px;
+  display: inline-flex;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  height: 40px;
+  align-items: center;
+  transition: 0.5s background-color;
+  margin: 0;
 
-    &:hover {
-        background-color: var(--light-deep);
-    }
+  &:hover {
+    background-color: var(--light-deep);
+  }
 }
 
 button.primary {
-    background-color: var(--primary);
-    color: white;
+  background-color: var(--primary);
+  color: white;
 
-    &:hover {
-        background-color: var(--primary-deep);
-    }
+  &:hover {
+    background-color: var(--primary-deep);
+  }
 }
 
 button.cyan {
-    background-color: var(--cyan);
-    color: white;
+  background-color: var(--cyan);
+  color: white;
 
-    &:hover {
-        background-color: var(--cyan-deep);
-    }
+  &:hover {
+    background-color: var(--cyan-deep);
+  }
 }
 
 button.success {
-    background-color: var(--green);
-    color: white;
+  background-color: var(--green);
+  color: white;
 
-    &:hover {
-        background-color: var(--green-deep);
-    }
+  &:hover {
+    background-color: var(--green-deep);
+  }
 }
 
 button.error {
-    background-color: var(--red);
-    color: white;
+  background-color: var(--red);
+  color: white;
 
-    &:hover {
-        background-color: var(--red-deep);
+  &:hover {
+    background-color: var(--red-deep);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+    button {
+        background-color: var(--dark-deep);
+
+        &:hover {
+            background-color: var(--black);
+        }
     }
 }
