@@ -3,21 +3,7 @@ body *::-webkit-scrollbar {
   height: 6px;
 }
 
-body *::-webkit-scrollbar-track {
-  border-radius: 3px;
-  background: var(--light);
-}
-
 body *::-webkit-scrollbar-thumb {
   border-radius: 3px;
   background: var(--grey);
-}
-
-@media (prefers-color-scheme: dark) {
-  body *::-webkit-scrollbar-track {
-    background: var(--dark);
-  }
-  body *::-webkit-scrollbar-thumb {
-    background: var(--grey-deep);
-  }
 }

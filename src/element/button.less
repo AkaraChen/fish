@@ -1,4 +1,4 @@
-button {
+a.btn,button {
   background-color: var(--light);
   border: none;
   color: var(--primary);
@@ -17,7 +17,7 @@ button {
   }
 }
 
-button.primary {
+a.btn,button.primary {
   background-color: var(--primary);
   color: white;
 
@@ -26,7 +26,7 @@ button.primary {
   }
 }
 
-button.cyan {
+a.btn,button.cyan {
   background-color: var(--cyan);
   color: white;
 
@@ -35,7 +35,7 @@ button.cyan {
   }
 }
 
-button.success {
+a.btn,button.success {
   background-color: var(--green);
   color: white;
 
@@ -44,7 +44,7 @@ button.success {
   }
 }
 
-button.error {
+a.btn,button.error {
   background-color: var(--red);
   color: white;
 
@@ -54,11 +54,15 @@ button.error {
 }
 
 @media (prefers-color-scheme: dark) {
-    button {
+    a.btn,button {
         background-color: var(--dark-deep);
 
         &:hover {
             background-color: var(--black);
         }
     }
+}
+
+button [disabled] {
+  opacity: 0.8;
 }

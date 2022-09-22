@@ -311,12 +311,12 @@ template {
   --size-lg: 16px;
   --size-md: 16px;
   --size-sm: 16px;
-  --h1-size-lg: 27px;
-  --h1-size-md: 26px;
-  --h1-size-sm: 25px;
-  --h2-size-lg: 22px;
-  --h2-size-md: 21.5px;
-  --h2-size-sm: 21px;
+  --h1-size-lg: 32px;
+  --h1-size-md: 31px;
+  --h1-size-sm: 30px;
+  --h2-size-lg: 24px;
+  --h2-size-md: 23px;
+  --h2-size-sm: 22px;
   --h3-size-lg: 19px;
   --h3-size-md: 18.5px;
   --h3-size-sm: 18px;
@@ -422,64 +422,6 @@ template {
     --h5-size: var(--h5-size-lg);
   }
 }
-:root {
-  --base-font: pingfang sc,
-        helvetica neue,
-        microsoft yahei,
-        hiragino sans gb,
-        microsoft sans serif,
-        wenquanyi micro hei,
-        sans-serif;
-  --code-font: consolas,
-        monospace;
-}
-:root {
-  box-sizing: border-box;
-  font-size: var(--font-size);
-  font-family: var(--base-font);
-  letter-spacing: 0.125px;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #11191f;
-    color: #bbbbbb;
-  }
-}
-:root {
-  --primary: #3498db;
-  --primary-deep: #2980b9;
-  --cyan: #1abc9c;
-  --cyan-deep: #16a085;
-  --green: #2ecc71;
-  --green-deep: #27ae60;
-  --dark: #303133;
-  --dark-deep: #1d1d1d;
-  --red: #e74c3c;
-  --red-deep: #c0392b;
-  --light: #e6e8eb;
-  --light-deep: #bdc3c7;
-  --grey: #95a5a6;
-  --grey-deep: #7f8c8d;
-  --mark: #fff2ca;
-  --mark-text: #543a26;
-  --white: #f5f6fa;
-  --black: #050505;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary: #2980b9;
-    --cyan: #16a085;
-    --green: #27ae60;
-    --red: #c0392b;
-  }
-}
 p,
 h1,
 h2,
@@ -512,6 +454,87 @@ h5 {
 p {
   word-spacing: 1px;
 }
+:root {
+  --base-font: pingfang sc,
+        helvetica neue,
+        microsoft yahei,
+        hiragino sans gb,
+        microsoft sans serif,
+        wenquanyi micro hei,
+        sans-serif;
+  --code-font: Jetbrains Mono,
+        Fira Code,
+        consolas,
+        monospace;
+}
+:root {
+  box-sizing: border-box;
+  font-size: var(--font-size);
+  font-family: var(--base-font);
+  letter-spacing: 0.125px;
+  --font-color: black;
+  color: var(--font-color);
+}
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #1b1b1b;
+    --font-color: #bbbbbb;
+  }
+}
+:root {
+  --blue: #3498db;
+  --blue-deep: #2980b9;
+  --cyan: #1abc9c;
+  --cyan-deep: #16a085;
+  --green: #2ecc71;
+  --green-deep: #27ae60;
+  --dark: #303133;
+  --dark-deep: #1d1d1d;
+  --red: #e74c3c;
+  --red-deep: #c0392b;
+  --light: #e6e8eb;
+  --light-deep: #bdc3c7;
+  --grey: #95a5a6;
+  --grey-deep: #39393A;
+  --mark: #fff2ca;
+  --mark-text: #543a26;
+  --white: #f5f6fa;
+  --black: #050505;
+  --code-color: #f47466;
+  --primary: var(--blue);
+  --primary-deep: var(--blue-deep);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: var(--primary-deep);
+    --cyan: var(--cyan-deep);
+    --green: var(--green-deep);
+    --red: var(--red-deep);
+    --grey: var(--grey-deep);
+  }
+}
+body.blue {
+  --primary: var(--blue);
+  --primary-deep: var(--blue-deep);
+}
+body.cyan {
+  --primary: var(--cyan);
+  --primary-deep: var(--cyan-deep);
+}
+body.green {
+  --primary: var(--green);
+  --primary-deep: var(--green-deep);
+}
+body.red {
+  --primary: var(--red);
+  --primary-deep: var(--red-deep);
+}
+a.btn,
 button {
   background-color: var(--light);
   border: none;
@@ -526,62 +549,79 @@ button {
   transition: 0.5s background-color;
   margin: 0;
 }
+a.btn:hover,
 button:hover {
   background-color: var(--light-deep);
 }
+a.btn,
 button.primary {
   background-color: var(--primary);
   color: white;
 }
+a.btn:hover,
 button.primary:hover {
   background-color: var(--primary-deep);
 }
+a.btn,
 button.cyan {
   background-color: var(--cyan);
   color: white;
 }
+a.btn:hover,
 button.cyan:hover {
   background-color: var(--cyan-deep);
 }
+a.btn,
 button.success {
   background-color: var(--green);
   color: white;
 }
+a.btn:hover,
 button.success:hover {
   background-color: var(--green-deep);
 }
+a.btn,
 button.error {
   background-color: var(--red);
   color: white;
 }
+a.btn:hover,
 button.error:hover {
   background-color: var(--red-deep);
 }
 @media (prefers-color-scheme: dark) {
+  a.btn,
   button {
     background-color: var(--dark-deep);
   }
+  a.btn:hover,
   button:hover {
     background-color: var(--black);
   }
 }
+button [disabled] {
+  opacity: 0.8;
+}
 blockquote {
   font-size: var(--font-size);
-  border-left: 5px solid var(--light-deep);
+  border-left: 5px solid var(--primary);
   padding: 0.25em 1em;
   opacity: 0.8;
   margin: 0.5em;
 }
-blockquote p {
-  margin: 0;
+hgroup > *:first-child {
+  margin-bottom: 0;
+}
+hgroup > *:first-child::before {
+  display: none;
 }
 hgroup > *:last-child {
   opacity: 0.5;
   margin-top: 0.4em;
   font-size: var(--h3-size);
 }
-hgroup > *:first-child {
-  margin-bottom: 0;
+hgroup > *:last-child::before {
+  display: none;
 }
 code,
 pre {
@@ -593,7 +633,7 @@ code {
   padding: 0.125em 0.5em;
   background-color: var(--light);
   font-size: var(--font-size);
-  color: var(--grey-deep);
+  color: var(--code-color);
 }
 pre code {
   background-color: #050505;
@@ -625,7 +665,7 @@ table {
   background-color: white;
 }
 table thead {
-  background-color: rgba(245, 245, 245, 0.7);
+  background-color: var(--primary);
   border: none;
 }
 table tbody {
@@ -674,21 +714,13 @@ body *::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
-body *::-webkit-scrollbar-track {
-  border-radius: 3px;
-  background: var(--light);
-}
 body *::-webkit-scrollbar-thumb {
   border-radius: 3px;
   background: var(--grey);
 }
-@media (prefers-color-scheme: dark) {
-  body *::-webkit-scrollbar-track {
-    background: var(--dark);
-  }
-  body *::-webkit-scrollbar-thumb {
-    background: var(--grey-deep);
-  }
+img {
+  max-width: 100%;
+  vertical-align: middle;
 }
 .container {
   max-width: 900px;
@@ -711,7 +743,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0.5em 0;
+  margin: 0.75em 0;
   line-height: 1.5;
 }
 h1,
@@ -765,6 +797,23 @@ ol {
 }
 li::marker {
   font-size: inherit;
+  color: var(--primary);
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  transition: 0.25s color;
+}
+h2:before,
+h3:before,
+h4:before,
+h5:before,
+h6:before {
+  content: "";
+  border-left: 4px var(--primary) solid;
+  margin-right: 7.5px;
 }
 form {
   margin: 0.5em;
@@ -778,6 +827,7 @@ legend {
   margin-bottom: 0.25em;
 }
 input {
+  box-sizing: content-box;
   width: 100%;
   height: 2.1em;
   margin: 0.75em 0;

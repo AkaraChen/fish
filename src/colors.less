@@ -1,6 +1,6 @@
 :root {
-  --primary: #3498db;
-  --primary-deep: #2980b9;
+  --blue: #3498db;
+  --blue-deep: #2980b9;
   --cyan: #1abc9c;
   --cyan-deep: #16a085;
   --green: #2ecc71;
@@ -12,18 +12,41 @@
   --light: #e6e8eb;
   --light-deep: #bdc3c7;
   --grey: #95a5a6;
-  --grey-deep: #7f8c8d;
+  --grey-deep: #39393A;
   --mark: #fff2ca;
   --mark-text: #543a26;
   --white: #f5f6fa;
   --black: #050505;
+  --code-color: #f47466;
+  --primary: var(--blue);
+  --primary-deep: var(--blue-deep);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #2980b9;
-    --cyan: #16a085;
-    --green: #27ae60;
-    --red: #c0392b;
+    --primary: var(--primary-deep);
+    --cyan: var(--cyan-deep);
+    --green: var(--green-deep);
+    --red: var(--red-deep);
+    --grey: var(--grey-deep);
+  }
+}
+
+body{
+  &.blue {
+      --primary: var(--blue);
+      --primary-deep: var(--blue-deep);
+  }
+  &.cyan {
+      --primary: var(--cyan);
+      --primary-deep: var(--cyan-deep);
+  }
+  &.green {
+      --primary: var(--green);
+      --primary-deep: var(--green-deep);
+  }
+  &.red {
+      --primary: var(--red);
+      --primary-deep: var(--red-deep);
   }
 }
