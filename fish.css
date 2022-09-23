@@ -735,8 +735,7 @@ body *::-webkit-scrollbar {
   height: 6px;
 }
 body::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
+  display: none;
 }
 *::-webkit-scrollbar-thumb {
   background: var(--grey);
