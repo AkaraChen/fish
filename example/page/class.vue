@@ -1,15 +1,16 @@
 <template>
     <h2>Classes</h2>
-    <p>Fish.css has only a few essential classes built in, if you need more util class, consider using Fish.css
-        in combination with Tailwind.css or
+    <p>
+        Fish.css has only a few essential classes built in, if you need more
+        util class, consider using Fish.css in combination with Tailwind.css or
         its alternatives.
     </p>
 
     <h3>Input</h3>
     <p><code>input.success</code></p>
-    <input type="text" class="success" placeholder="Success Placeholder">
+    <input type="text" class="success" placeholder="Success Placeholder" />
     <p><code>input.error</code></p>
-    <input type="text" class="error" placeholder="Error Placeholder">
+    <input type="text" class="error" placeholder="Error Placeholder" />
 
     <h3>Button</h3>
     <p><code>button.cyan</code></p>

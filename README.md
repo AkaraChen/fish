@@ -17,7 +17,10 @@ pnpm add @akrc/fish
 Or you can import Fish.css by CDN:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AkaraChen/fish@latest/fish.css">
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/AkaraChen/fish@latest/fish.css"
+/>
 ```
 
 ### Usage

@@ -3,11 +3,12 @@
         <header>
             <hgroup>
                 <router-link to="/">
-                    <h1>
-                        Fish.css
-                    </h1>
+                    <h1>Fish.css</h1>
                 </router-link>
-                <p>A CSS library focused on improving the default appearance of HTML.</p>
+                <p>
+                    A CSS library focused on improving the default appearance of
+                    HTML.
+                </p>
             </hgroup>
         </header>
 
