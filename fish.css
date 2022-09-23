@@ -564,31 +564,31 @@ a.btn.primary:hover,
 button.primary:hover {
   background-color: var(--primary-deep);
 }
-a.btn.primary.cyan,
-button.primary.cyan {
+a.btn.cyan,
+button.cyan {
   background-color: var(--cyan);
   color: white;
 }
-a.btn.primary.cyan:hover,
-button.primary.cyan:hover {
+a.btn.cyan:hover,
+button.cyan:hover {
   background-color: var(--cyan-deep);
 }
-a.btn.primary.success,
-button.primary.success {
+a.btn.success,
+button.success {
   background-color: var(--green);
   color: white;
 }
-a.btn.primary.success:hover,
-button.primary.success:hover {
+a.btn.success:hover,
+button.success:hover {
   background-color: var(--green-deep);
 }
-a.btn.primary.error,
-button.primary.error {
+a.btn.error,
+button.error {
   background-color: var(--red);
   color: white;
 }
-a.btn.primary.error:hover,
-button.primary.error:hover {
+a.btn.error:hover,
+button.error:hover {
   background-color: var(--red-deep);
 }
 @media (prefers-color-scheme: dark) {
@@ -618,18 +618,15 @@ blockquote {
   opacity: 0.8;
   margin: 0.5em;
 }
-hgroup > * {
-  margin-top: 0.875em;
-}
-hgroup > *::after {
+hgroup *::after {
   display: none;
 }
-hgroup > * h1,
-hgroup > * h2,
-hgroup > * h3,
-hgroup > * h4,
-hgroup > * h5,
-hgroup > * h6 {
+hgroup * h1,
+hgroup * h2,
+hgroup * h3,
+hgroup * h4,
+hgroup * h5,
+hgroup * h6 {
   margin-bottom: 0;
   color: var(--font-color);
 }
@@ -754,17 +751,20 @@ img {
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .container-lg {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .container-sm {
   margin: 0 auto;
   max-width: 768px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 h1,
 h2,
@@ -855,6 +855,7 @@ form {
 fieldset {
   padding: 0;
   border: none;
+  margin-bottom: 0.75em;
 }
 legend {
   font-size: var(--font-size);
@@ -870,6 +871,7 @@ input {
   caret-color: gray;
   font-size: 16px;
   display: block;
+  transition: 0.25s outline;
 }
 input:focus {
   outline: var(--primary) 2px solid;
@@ -918,6 +920,8 @@ select {
   caret-color: gray;
   font-size: 16px;
   appearance: none;
+  background-color: transparent;
+  color: var(--font-color);
 }
 label + select {
   margin-top: 0.25em;
@@ -977,4 +981,51 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
   background-color: var(--primary);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+}
+input[type="checkbox"] + label + input[type="checkbox"] {
+  margin-left: 6px;
+}
+input[type="file"] {
+  appearance: none;
+  vertical-align: middle;
+  outline: none;
+  background-color: transparent;
+  height: fit-content;
+}
+input[type="file"]::-webkit-file-upload-button {
+  background-color: var(--light);
+  border: none;
+  color: var(--primary);
+  border-radius: var(--radius);
+  font-size: 16px;
+  display: inline-flex;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  height: 30px;
+  align-items: center;
+  transition: 0.5s background-color;
+  margin: 0;
+  margin-right: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  input[type="file"]::-webkit-file-upload-button {
+    background-color: var(--dark);
+  }
+}
+input[type="datetime-local"],
+input[type="date"] {
+  appearance: none;
+  color: var(--font-color);
+  background-color: transparent;
+}
+@media (prefers-color-scheme: dark) {
+  input[type="datetime-local"],
+  input[type="date"] {
+    background-color: var(--dark);
+  }
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg) brightness(103%) contrast(103%);
+    padding-right: 6px;
+  }
 }

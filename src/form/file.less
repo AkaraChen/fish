@@ -1,0 +1,29 @@
+input[type="file"] {
+    appearance: none;
+    vertical-align: middle;
+    outline: none;
+    background-color: transparent;
+    height: fit-content;
+
+    &::-webkit-file-upload-button {
+        background-color: var(--light);
+        border: none;
+        color: var(--primary);
+        border-radius: var(--radius);
+        font-size: 16px;
+        display: inline-flex;
+        padding-inline-start: 16px;
+        padding-inline-end: 16px;
+        height: 30px;
+        align-items: center;
+        transition: 0.5s background-color;
+        margin: 0;
+        margin-right: 10px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+  input[type="file"]::-webkit-file-upload-button {
+    background-color: var(--dark);
+  }
+}

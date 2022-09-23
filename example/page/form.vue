@@ -1,4 +1,5 @@
 <template>
+    <h2>Form</h2>
     <form>
         <label for="name">First Name</label>
         <input name="name" type="text" placeholder="Placeholder Test">
@@ -20,17 +21,17 @@
         </fieldset>
         <fieldset>
             <legend>Choose your monster's features:</legend>
-
-            <div>
-                <input type="checkbox" id="scales" name="scales" checked>
-                <label for="scales">Scales</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="horns" name="horns">
-                <label for="horns">Horns</label>
-            </div>
+            <input type="checkbox" id="scales" name="scales" checked>
+            <label for="scales">Scales</label>
+            <input type="checkbox" id="horns" name="horns">
+            <label for="horns">Horns</label>
         </fieldset>
+        <label>Select date</label>
+        <input type="date">
+        <label>Select date and time</label>
+        <input type="datetime-local">
+        <label>Select a range</label>
+        <input type="file">
         <button type="submit">Submit</button>
     </form>
 </template>
