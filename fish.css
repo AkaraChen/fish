@@ -685,13 +685,12 @@ kbd {
 }
 table {
   border-collapse: collapse;
-  border: solid var(--light);
-  margin: 0.5em auto;
   background-color: white;
 }
 table thead {
   background-color: var(--primary);
   border: none;
+  color: white;
 }
 table tbody {
   border: none;
