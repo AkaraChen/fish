@@ -311,12 +311,12 @@ template {
   --size-lg: 16px;
   --size-md: 16px;
   --size-sm: 16px;
-  --h1-size-lg: 32px;
-  --h1-size-md: 31px;
-  --h1-size-sm: 30px;
-  --h2-size-lg: 24px;
-  --h2-size-md: 23px;
-  --h2-size-sm: 22px;
+  --h1-size-lg: 30px;
+  --h1-size-md: 28px;
+  --h1-size-sm: 26px;
+  --h2-size-lg: 23px;
+  --h2-size-md: 22px;
+  --h2-size-sm: 21px;
   --h3-size-lg: 19px;
   --h3-size-md: 18.5px;
   --h3-size-sm: 18px;
@@ -475,7 +475,9 @@ p {
   --font-color: black;
   color: var(--font-color);
 }
-* {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -592,7 +594,7 @@ button.error:hover {
 @media (prefers-color-scheme: dark) {
   a.btn,
   button {
-    background-color: var(--dark-deep);
+    background-color: var(--dark);
   }
   a.btn:hover,
   button:hover {
@@ -602,12 +604,30 @@ button.error:hover {
 button [disabled] {
   opacity: 0.8;
 }
+a.btn + a.btn,
+a.btn + button,
+button + a.btn,
+button + button {
+  margin-left: 5px;
+}
 blockquote {
   font-size: var(--font-size);
   border-left: 5px solid var(--primary);
   padding: 0.25em 1em;
   opacity: 0.8;
   margin: 0.5em;
+}
+hgroup > *::after {
+  display: none;
+}
+hgroup > * h1,
+hgroup > * h2,
+hgroup > * h3,
+hgroup > * h4,
+hgroup > * h5,
+hgroup > * h6 {
+  margin-bottom: 0;
+  color: var(--font-color);
 }
 hgroup > *:first-child {
   margin-bottom: 0;
@@ -714,9 +734,15 @@ body *::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
+body::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--grey);
+}
 body *::-webkit-scrollbar-thumb {
   border-radius: 3px;
-  background: var(--grey);
 }
 img {
   max-width: 100%;
@@ -795,6 +821,10 @@ ol {
   margin: 1em;
   font-size: var(--font-size);
 }
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 li::marker {
   font-size: inherit;
   color: var(--primary);
@@ -816,7 +846,8 @@ h6:before {
   margin-right: 7.5px;
 }
 form {
-  margin: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 fieldset {
   padding: 0;
@@ -827,7 +858,6 @@ legend {
   margin-bottom: 0.25em;
 }
 input {
-  box-sizing: content-box;
   width: 100%;
   height: 2.1em;
   margin: 0.75em 0;
@@ -858,7 +888,7 @@ input.success::placeholder {
 }
 @media (prefers-color-scheme: dark) {
   input {
-    background-color: var(--dark-deep);
+    background-color: var(--dark);
     color: var(--light);
     outline-color: transparent;
   }
@@ -867,8 +897,9 @@ input.success::placeholder {
   }
 }
 label {
-  font-size: var(--font-size);
+  font-size: calc(var(--font-size) - 1px);
   display: inline-block;
+  opacity: 0.9;
 }
 label + input {
   margin-top: 0.5em;
@@ -885,9 +916,12 @@ select {
   font-size: 16px;
   appearance: none;
 }
+label + select {
+  margin-top: 0.25em;
+}
 @media (prefers-color-scheme: dark) {
   select {
-    background-color: var(--dark-deep);
+    background-color: var(--dark);
     color: var(--light);
     border-color: transparent;
   }
@@ -928,12 +962,11 @@ input[type="checkbox"] {
 input[type="checkbox"] + label {
   display: inline;
   margin: 0;
+  margin-left: 0.5em;
 }
 input[type="checkbox"]::before {
   content: "";
   display: block;
-  left: 0;
-  right: 0;
   width: 1em;
   height: 1em;
   border-radius: var(--radius);
