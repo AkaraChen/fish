@@ -910,6 +910,7 @@ label + input {
   margin-top: 0.5em;
 }
 select {
+  outline: none;
   display: block;
   width: 100%;
   padding: 0.25em;
@@ -924,6 +925,10 @@ select {
   appearance: none;
   background-color: transparent;
   color: var(--font-color);
+  transition: 0.25s border;
+}
+select:focus {
+  border-color: var(--primary);
 }
 label + select {
   margin-top: 0.25em;
@@ -932,7 +937,6 @@ label + select {
   select {
     background-color: var(--dark);
     color: var(--light);
-    border-color: transparent;
   }
 }
 input[type="radio"] {

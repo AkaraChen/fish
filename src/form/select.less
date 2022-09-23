@@ -1,4 +1,5 @@
 select {
+    outline: none;
     display: block;
     width: 100%;
     padding: 0.25em;
@@ -13,6 +14,11 @@ select {
     appearance: none;
     background-color: transparent;
     color: var(--font-color);
+    transition: 0.25s border;
+
+    &:focus {
+        border-color: var(--primary);
+    }
 }
 
 label + select {
@@ -23,6 +29,5 @@ label + select {
     select {
         background-color: var(--dark);
         color: var(--light);
-        border-color: transparent;
     }
 }
