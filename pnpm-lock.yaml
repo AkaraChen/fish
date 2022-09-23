@@ -3,12 +3,12 @@ lockfileVersion: 5.4
 specifiers:
   '@parcel/core': 2.7.0
   '@parcel/transformer-less': 2.7.0
-  '@parcel/transformer-vue': ^2.7.0
+  '@parcel/transformer-vue': 2.7.0
   husky: 8.0.1
   less: 4.1.3
   parcel: 2.7.0
   vue: 3.2.39
-  vue-router: '4'
+  vue-router: 4.1.5
 
 devDependencies:
   '@parcel/core': 2.7.0
