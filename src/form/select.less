@@ -11,9 +11,13 @@ select {
     appearance: none;
 }
 
+label + select {
+    margin-top: 0.25em;
+}
+
 @media (prefers-color-scheme: dark) {
     select {
-        background-color: var(--dark-deep);
+        background-color: var(--dark);
         color: var(--light);
         border-color: transparent;
     }

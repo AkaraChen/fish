@@ -55,7 +55,7 @@ a.btn,button.error {
 
 @media (prefers-color-scheme: dark) {
     a.btn,button {
-        background-color: var(--dark-deep);
+        background-color: var(--dark);
 
         &:hover {
             background-color: var(--black);
@@ -65,4 +65,11 @@ a.btn,button.error {
 
 button [disabled] {
   opacity: 0.8;
+}
+
+a.btn + a.btn,
+a.btn + button,
+button + a.btn,
+button + button {
+  margin-left: 5px;
 }
