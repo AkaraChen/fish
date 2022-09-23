@@ -3,7 +3,7 @@
   "version": "0.2.4",
   "description": "",
   "scripts": {
-    "dev": "parcel example/index.html",
+    "dev": "parcel example/index.html --host 0.0.0.0",
     "build": "lessc src/index.less fish.css",
     "build:preview": "parcel build example/index.html",
     "prepare": "husky install"

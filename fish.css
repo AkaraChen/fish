@@ -555,40 +555,40 @@ a.btn:hover,
 button:hover {
   background-color: var(--light-deep);
 }
-a.btn,
+a.btn.primary,
 button.primary {
   background-color: var(--primary);
   color: white;
 }
-a.btn:hover,
+a.btn.primary:hover,
 button.primary:hover {
   background-color: var(--primary-deep);
 }
-a.btn,
-button.cyan {
+a.btn.primary.cyan,
+button.primary.cyan {
   background-color: var(--cyan);
   color: white;
 }
-a.btn:hover,
-button.cyan:hover {
+a.btn.primary.cyan:hover,
+button.primary.cyan:hover {
   background-color: var(--cyan-deep);
 }
-a.btn,
-button.success {
+a.btn.primary.success,
+button.primary.success {
   background-color: var(--green);
   color: white;
 }
-a.btn:hover,
-button.success:hover {
+a.btn.primary.success:hover,
+button.primary.success:hover {
   background-color: var(--green-deep);
 }
-a.btn,
-button.error {
+a.btn.primary.error,
+button.primary.error {
   background-color: var(--red);
   color: white;
 }
-a.btn:hover,
-button.error:hover {
+a.btn.primary.error:hover,
+button.primary.error:hover {
   background-color: var(--red-deep);
 }
 @media (prefers-color-scheme: dark) {
@@ -609,6 +609,7 @@ a.btn + button,
 button + a.btn,
 button + button {
   margin-left: 5px;
+  margin-top: 5px;
 }
 blockquote {
   font-size: var(--font-size);
@@ -616,6 +617,9 @@ blockquote {
   padding: 0.25em 1em;
   opacity: 0.8;
   margin: 0.5em;
+}
+hgroup > * {
+  margin-top: 0.875em;
 }
 hgroup > *::after {
   display: none;
@@ -630,6 +634,7 @@ hgroup > * h6 {
   color: var(--font-color);
 }
 hgroup > *:first-child {
+  margin-top: 0;
   margin-bottom: 0;
 }
 hgroup > *:first-child::before {

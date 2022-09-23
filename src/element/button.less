@@ -1,4 +1,5 @@
-a.btn,button {
+a.btn,
+button {
   background-color: var(--light);
   border: none;
   color: var(--primary);
@@ -15,52 +16,53 @@ a.btn,button {
   &:hover {
     background-color: var(--light-deep);
   }
-}
 
-a.btn,button.primary {
-  background-color: var(--primary);
-  color: white;
+  &.primary {
+    background-color: var(--primary);
+    color: white;
 
-  &:hover {
-    background-color: var(--primary-deep);
-  }
-}
+    &:hover {
+      background-color: var(--primary-deep);
+    }
 
-a.btn,button.cyan {
-  background-color: var(--cyan);
-  color: white;
+    &.cyan {
+      background-color: var(--cyan);
+      color: white;
 
-  &:hover {
-    background-color: var(--cyan-deep);
-  }
-}
+      &:hover {
+        background-color: var(--cyan-deep);
+      }
+    }
 
-a.btn,button.success {
-  background-color: var(--green);
-  color: white;
+    &.success {
+      background-color: var(--green);
+      color: white;
 
-  &:hover {
-    background-color: var(--green-deep);
-  }
-}
+      &:hover {
+        background-color: var(--green-deep);
+      }
+    }
 
-a.btn,button.error {
-  background-color: var(--red);
-  color: white;
+    &.error {
+      background-color: var(--red);
+      color: white;
 
-  &:hover {
-    background-color: var(--red-deep);
+      &:hover {
+        background-color: var(--red-deep);
+      }
+    }
   }
 }
 
 @media (prefers-color-scheme: dark) {
-    a.btn,button {
-        background-color: var(--dark);
+  a.btn,
+  button {
+    background-color: var(--dark);
 
-        &:hover {
-            background-color: var(--black);
-        }
+    &:hover {
+      background-color: var(--black);
     }
+  }
 }
 
 button [disabled] {
@@ -72,4 +74,5 @@ a.btn + button,
 button + a.btn,
 button + button {
   margin-left: 5px;
+  margin-top: 5px;
 }
