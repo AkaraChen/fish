@@ -1,10 +1,11 @@
 input[type="checkbox"] {
     display: inline;
-    outline: none;
+    border: none;
     width: 1em;
     height: 1em;
     margin: 0.5em 0;
     border-radius: var(--radius);
+    padding: 0;
 }
 
 input[type="checkbox"] + label {
@@ -15,7 +16,7 @@ input[type="checkbox"] + label {
 
 input[type="checkbox"]::before {
     content: "";
-    display: block;
+    display: inline-block;
     width: 1em;
     height: 1em;
     border-radius: var(--radius);
