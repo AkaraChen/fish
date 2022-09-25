@@ -11,18 +11,18 @@ input {
     transition: 0.25s border;
 
     &:focus {
-        border-color: var(--primary);
+        border-color: var(--fish-primary);
     }
 }
 
 @media (prefers-color-scheme: dark) {
     input {
-        background-color: var(--dark);
-        color: var(--light);
+        background-color: var(--fish-dark);
+        color: var(--fish-light);
         border-color: transparent;
 
         &::placeholder {
-            color: var(--light);
+            color: var(--fish-light);
         }
 
         &:focus-visible {

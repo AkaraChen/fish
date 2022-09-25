@@ -1,52 +1,52 @@
 :root {
-    --blue: #3498db;
-    --blue-deep: #2980b9;
-    --cyan: #1abc9c;
-    --cyan-deep: #16a085;
-    --green: #2ecc71;
-    --green-deep: #27ae60;
-    --dark: #303133;
-    --dark-deep: #1d1d1d;
-    --red: #e74c3c;
-    --red-deep: #c0392b;
-    --light: #e6e8eb;
-    --light-deep: #bdc3c7;
-    --grey: #95a5a6;
-    --grey-deep: #39393a;
-    --mark: #fff2ca;
-    --mark-text: #543a26;
-    --white: #f5f6fa;
-    --black: #050505;
-    --code-color: #f47466;
-    --primary: var(--blue);
-    --primary-deep: var(--blue-deep);
+    --fish-blue: #3498db;
+    --fish-blue-deep: #2980b9;
+    --fish-cyan: #1abc9c;
+    --fish-cyan-deep: #16a085;
+    --fish-green: #2ecc71;
+    --fish-green-deep: #27ae60;
+    --fish-dark: #303133;
+    --fish-dark-deep: #1d1d1d;
+    --fish-red: #e74c3c;
+    --fish-red-deep: #c0392b;
+    --fish-light: #e6e8eb;
+    --fish-light-deep: #1d1e1f;
+    --fish-grey: #95a5a6;
+    --fish-grey-deep: #39393a;
+    --fish-mark: #fff2ca;
+    --fish-mark-text: #543a26;
+    --fish-white: #f5f6fa;
+    --fish-black: #050505;
+    --fish-code-color: #f47466;
+    --fish-primary: var(--fish-blue);
+    --fish-primary-deep: var(--fish-blue-deep);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary: var(--primary-deep);
-        --cyan: var(--cyan-deep);
-        --green: var(--green-deep);
-        --red: var(--red-deep);
-        --grey: var(--grey-deep);
+        --fish-primary: var(--fish-primary-deep);
+        --fish-cyan: var(--fish-cyan-deep);
+        --fish-green: var(--fish-green-deep);
+        --fish-red: var(--fish-red-deep);
+        --fish-grey: var(--fish-grey-deep);
     }
 }
 
 * {
     &.blue {
-        --primary: var(--blue);
-        --primary-deep: var(--blue-deep);
+        --fish-primary: var(--fish-blue);
+        --fish-primary-deep: var(--fish-blue-deep);
     }
     &.cyan {
-        --primary: var(--cyan);
-        --primary-deep: var(--cyan-deep);
+        --fish-primary: var(--fish-cyan);
+        --fish-primary-deep: var(--fish-cyan-deep);
     }
     &.green {
-        --primary: var(--green);
-        --primary-deep: var(--green-deep);
+        --fish-primary: var(--fish-green);
+        --fish-primary-deep: var(--fish-green-deep);
     }
     &.red {
-        --primary: var(--red);
-        --primary-deep: var(--red-deep);
+        --fish-primary: var(--fish-red);
+        --fish-primary-deep: var(--fish-red-deep);
     }
 }

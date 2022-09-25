@@ -481,58 +481,58 @@ p {
     }
 }
 :root {
-    --blue: #3498db;
-    --blue-deep: #2980b9;
-    --cyan: #1abc9c;
-    --cyan-deep: #16a085;
-    --green: #2ecc71;
-    --green-deep: #27ae60;
-    --dark: #303133;
-    --dark-deep: #1d1d1d;
-    --red: #e74c3c;
-    --red-deep: #c0392b;
-    --light: #e6e8eb;
-    --light-deep: #bdc3c7;
-    --grey: #95a5a6;
-    --grey-deep: #39393a;
-    --mark: #fff2ca;
-    --mark-text: #543a26;
-    --white: #f5f6fa;
-    --black: #050505;
-    --code-color: #f47466;
-    --primary: var(--blue);
-    --primary-deep: var(--blue-deep);
+    --fish-blue: #3498db;
+    --fish-blue-deep: #2980b9;
+    --fish-cyan: #1abc9c;
+    --fish-cyan-deep: #16a085;
+    --fish-green: #2ecc71;
+    --fish-green-deep: #27ae60;
+    --fish-dark: #303133;
+    --fish-dark-deep: #1d1d1d;
+    --fish-red: #e74c3c;
+    --fish-red-deep: #c0392b;
+    --fish-light: #e6e8eb;
+    --fish-light-deep: #1d1e1f;
+    --fish-grey: #95a5a6;
+    --fish-grey-deep: #39393a;
+    --fish-mark: #fff2ca;
+    --fish-mark-text: #543a26;
+    --fish-white: #f5f6fa;
+    --fish-black: #050505;
+    --fish-code-color: #f47466;
+    --fish-primary: var(--fish-blue);
+    --fish-primary-deep: var(--fish-blue-deep);
 }
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary: var(--primary-deep);
-        --cyan: var(--cyan-deep);
-        --green: var(--green-deep);
-        --red: var(--red-deep);
-        --grey: var(--grey-deep);
+        --fish-primary: var(--fish-primary-deep);
+        --fish-cyan: var(--fish-cyan-deep);
+        --fish-green: var(--fish-green-deep);
+        --fish-red: var(--fish-red-deep);
+        --fish-grey: var(--fish-grey-deep);
     }
 }
 *.blue {
-    --primary: var(--blue);
-    --primary-deep: var(--blue-deep);
+    --fish-primary: var(--fish-blue);
+    --fish-primary-deep: var(--fish-blue-deep);
 }
 *.cyan {
-    --primary: var(--cyan);
-    --primary-deep: var(--cyan-deep);
+    --fish-primary: var(--fish-cyan);
+    --fish-primary-deep: var(--fish-cyan-deep);
 }
 *.green {
-    --primary: var(--green);
-    --primary-deep: var(--green-deep);
+    --fish-primary: var(--fish-green);
+    --fish-primary-deep: var(--fish-green-deep);
 }
 *.red {
-    --primary: var(--red);
-    --primary-deep: var(--red-deep);
+    --fish-primary: var(--fish-red);
+    --fish-primary-deep: var(--fish-red-deep);
 }
 a.btn,
 button {
-    background-color: var(--light);
+    background-color: var(--fish-light);
     border: none;
-    color: var(--primary);
+    color: var(--fish-primary);
     border-radius: var(--radius);
     font-size: 16px;
     display: inline-flex;
@@ -545,16 +545,16 @@ button {
 }
 a.btn:hover,
 button:hover {
-    background-color: var(--light-deep);
+    background-color: var(--fish-light-deep);
 }
 @media (prefers-color-scheme: dark) {
     a.btn,
     button {
-        background-color: var(--dark);
+        background-color: var(--fish-dark);
     }
     a.btn:hover,
     button:hover {
-        background-color: var(--black);
+        background-color: var(--fish-black);
     }
 }
 button [disabled] {
@@ -569,7 +569,7 @@ button + button {
 }
 blockquote {
     font-size: var(--font-size);
-    border-left: 5px solid var(--grey);
+    border-left: 5px solid var(--fish-grey);
     padding: 0.25em 1em;
     opacity: 0.8;
     margin: 0.5em;
@@ -609,13 +609,13 @@ pre {
 code {
     display: inline-block;
     padding: 0.125em 0.5em;
-    background-color: var(--light);
+    background-color: var(--fish-light);
     font-size: var(--font-size);
-    color: var(--code-color);
+    color: var(--fish-code-color);
 }
 pre code {
     background-color: #050505;
-    color: var(--light);
+    color: var(--fish-light);
     margin: 0;
     padding: 0.75em;
     font-size: 1em;
@@ -624,7 +624,7 @@ pre code {
 }
 @media (prefers-color-scheme: dark) {
     code {
-        background-color: var(--dark);
+        background-color: var(--fish-dark);
     }
 }
 kbd {
@@ -664,25 +664,25 @@ table th {
 }
 @media (prefers-color-scheme: dark) {
     table {
-        background-color: var(--dark);
+        background-color: var(--fish-dark);
         border: none;
     }
     table tr:nth-child(even) {
-        background-color: var(--dark-deep);
+        background-color: var(--fish-dark-deep);
     }
     table thead {
-        background-color: var(--dark-deep);
+        background-color: var(--fish-dark-deep);
     }
 }
 details {
     margin: 0.5em 0;
-    background-color: var(--white);
+    background-color: var(--fish-white);
     padding: 1em;
     border-radius: var(--radius);
 }
 @media (prefers-color-scheme: dark) {
     details {
-        background-color: var(--dark);
+        background-color: var(--fish-dark);
     }
 }
 footer {
@@ -698,7 +698,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 *::-webkit-scrollbar-thumb {
-    background: var(--grey);
+    background: var(--fish-grey);
 }
 body *::-webkit-scrollbar-thumb {
     border-radius: 3px;
@@ -726,21 +726,21 @@ h6 {
 }
 mark {
     display: inline-block;
-    background-color: var(--mark);
-    color: var(--mark-text);
+    background-color: var(--fish-mark);
+    color: var(--fish-mark-text);
     padding: 2px;
 }
 a {
-    color: var(--primary);
+    color: var(--fish-primary);
     text-decoration: none;
     background-color: inherit;
     padding: 0;
     font-size: var(--font-size);
 }
 a.button {
-    color: var(--primary);
+    color: var(--fish-primary);
     display: block;
-    background-color: var(--light);
+    background-color: var(--fish-light);
     width: fit-content;
     padding: 0.5em;
     border-radius: var(--radius);
@@ -750,7 +750,7 @@ a.button::after {
     display: none;
 }
 a.button:hover {
-    background-color: var(--light-deep);
+    background-color: var(--fish-light-deep);
 }
 ul,
 ol {
@@ -790,16 +790,16 @@ input {
     transition: 0.25s border;
 }
 input:focus {
-    border-color: var(--primary);
+    border-color: var(--fish-primary);
 }
 @media (prefers-color-scheme: dark) {
     input {
-        background-color: var(--dark);
-        color: var(--light);
+        background-color: var(--fish-dark);
+        color: var(--fish-light);
         border-color: transparent;
     }
     input::placeholder {
-        color: var(--light);
+        color: var(--fish-light);
     }
     input:focus-visible {
         border-color: none;
@@ -832,15 +832,15 @@ select {
     transition: 0.25s border;
 }
 select:focus {
-    border-color: var(--primary);
+    border-color: var(--fish-primary);
 }
 label + select {
     margin-top: 0.25em;
 }
 @media (prefers-color-scheme: dark) {
     select {
-        background-color: var(--dark);
-        color: var(--light);
+        background-color: var(--fish-dark);
+        color: var(--fish-light);
     }
 }
 input[type='radio'] {
@@ -862,10 +862,10 @@ input[type='radio']::before {
     width: 1em;
     height: 1em;
     border-radius: 50%;
-    border: solid 0.1em var(--light-deep);
+    border: solid 0.1em var(--fish-light-deep);
 }
 input[type='radio']:checked::before {
-    border: solid 0.25em var(--primary);
+    border: solid 0.25em var(--fish-primary);
     background-color: white;
 }
 input[type='checkbox'] {
@@ -890,7 +890,7 @@ input[type='checkbox']::before {
     border-radius: var(--radius);
 }
 input[type='checkbox']:checked::before {
-    background-color: var(--primary);
+    background-color: var(--fish-primary);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
 }
 input[type='checkbox'] + label + input[type='checkbox'] {
@@ -905,9 +905,9 @@ input[type='file'] {
     height: fit-content;
 }
 input[type='file']::-webkit-file-upload-button {
-    background-color: var(--light);
+    background-color: var(--fish-light);
     border: none;
-    color: var(--primary);
+    color: var(--fish-primary);
     border-radius: var(--radius);
     font-size: 16px;
     display: inline-flex;
@@ -921,7 +921,7 @@ input[type='file']::-webkit-file-upload-button {
 }
 @media (prefers-color-scheme: dark) {
     input[type='file']::-webkit-file-upload-button {
-        background-color: var(--dark);
+        background-color: var(--fish-dark);
     }
 }
 input[type='datetime-local'],
@@ -933,7 +933,7 @@ input[type='date'] {
 @media (prefers-color-scheme: dark) {
     input[type='datetime-local'],
     input[type='date'] {
-        background-color: var(--dark);
+        background-color: var(--fish-dark);
     }
     input[type='datetime-local']::-webkit-calendar-picker-indicator,
     input[type='date']::-webkit-calendar-picker-indicator {
