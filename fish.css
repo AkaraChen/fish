@@ -512,19 +512,19 @@ p {
         --grey: var(--grey-deep);
     }
 }
-body.blue {
+*.blue {
     --primary: var(--blue);
     --primary-deep: var(--blue-deep);
 }
-body.cyan {
+*.cyan {
     --primary: var(--cyan);
     --primary-deep: var(--cyan-deep);
 }
-body.green {
+*.green {
     --primary: var(--green);
     --primary-deep: var(--green-deep);
 }
-body.red {
+*.red {
     --primary: var(--red);
     --primary-deep: var(--red-deep);
 }
@@ -546,42 +546,6 @@ button {
 a.btn:hover,
 button:hover {
     background-color: var(--light-deep);
-}
-a.btn.primary,
-button.primary {
-    background-color: var(--primary);
-    color: white;
-}
-a.btn.primary:hover,
-button.primary:hover {
-    background-color: var(--primary-deep);
-}
-a.btn.cyan,
-button.cyan {
-    background-color: var(--cyan);
-    color: white;
-}
-a.btn.cyan:hover,
-button.cyan:hover {
-    background-color: var(--cyan-deep);
-}
-a.btn.success,
-button.success {
-    background-color: var(--green);
-    color: white;
-}
-a.btn.success:hover,
-button.success:hover {
-    background-color: var(--green-deep);
-}
-a.btn.error,
-button.error {
-    background-color: var(--red);
-    color: white;
-}
-a.btn.error:hover,
-button.error:hover {
-    background-color: var(--red-deep);
 }
 @media (prefers-color-scheme: dark) {
     a.btn,
@@ -605,7 +569,7 @@ button + button {
 }
 blockquote {
     font-size: var(--font-size);
-    border-left: 5px solid var(--primary);
+    border-left: 5px solid var(--grey);
     padding: 0.25em 1em;
     opacity: 0.8;
     margin: 0.5em;
@@ -677,7 +641,7 @@ table {
     background-color: white;
 }
 table thead {
-    background-color: var(--primary);
+    background-color: rgba(245, 245, 245, 0.7);
     border: none;
     color: white;
 }
@@ -704,6 +668,9 @@ table th {
         border: none;
     }
     table tr:nth-child(even) {
+        background-color: var(--dark-deep);
+    }
+    table thead {
         background-color: var(--dark-deep);
     }
 }
@@ -740,24 +707,6 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.container-lg {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.container-sm {
-    margin: 0 auto;
-    max-width: 768px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 h1,
 h2,
 h3,
@@ -788,14 +737,6 @@ a {
     padding: 0;
     font-size: var(--font-size);
 }
-a:hover {
-    background-color: transparent;
-}
-a::after {
-    content: '↗';
-    left: 0;
-    top: 0;
-}
 a.button {
     color: var(--primary);
     display: block;
@@ -819,26 +760,6 @@ ol {
 li {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-li::marker {
-    font-size: inherit;
-    color: var(--primary);
-}
-h2,
-h3,
-h4,
-h5,
-h6 {
-    transition: 0.25s color;
-}
-h2:before,
-h3:before,
-h4:before,
-h5:before,
-h6:before {
-    content: '';
-    border-left: 4px var(--primary) solid;
-    margin-right: 7.5px;
 }
 form {
     margin-top: 0.5em;
@@ -870,18 +791,6 @@ input {
 }
 input:focus {
     border-color: var(--primary);
-}
-input.error {
-    border-color: var(--red);
-}
-input.error::placeholder {
-    color: var(--red);
-}
-input.success {
-    border-color: var(--green);
-}
-input.success::placeholder {
-    color: var(--green);
 }
 @media (prefers-color-scheme: dark) {
     input {

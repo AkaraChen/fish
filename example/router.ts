@@ -3,7 +3,6 @@ import Index from './page/index.vue';
 import Text from './page/text.vue';
 import Form from './page/form.vue';
 import Other from './page/other.vue';
-import Class from './page/class.vue';
 
 const routes: RouteRecordRaw[] = [
     {
@@ -21,10 +20,6 @@ const routes: RouteRecordRaw[] = [
     {
         path: '/other',
         component: Other,
-    },
-    {
-        path: '/class',
-        component: Class,
     },
 ];
 

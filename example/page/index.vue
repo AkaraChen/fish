@@ -18,13 +18,11 @@
 
     <p>
         Just write HTML tags and organise the HTML structure according to web
-        standards. This page uses Fish.css, which doesn't write any className
-        (except <code>.container</code> class) or css!
+        standards.
     </p>
 
     <h2>Examples</h2>
     <router-link class="btn" to="/text">Text</router-link>
     <router-link class="btn" to="/form">Form</router-link>
     <router-link class="btn" to="/other">Others</router-link>
-    <router-link class="btn" to="/class">Classes</router-link>
 </template>
