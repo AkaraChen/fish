@@ -529,7 +529,7 @@ p {
     --fish-primary: var(--fish-red);
     --fish-primary-deep: var(--fish-red-deep);
 }
-a.btn,
+.btn,
 button {
     background-color: var(--fish-light);
     border: none;
@@ -544,16 +544,16 @@ button {
     transition: 0.5s background-color;
     margin: 0;
 }
-a.btn:hover,
+.btn:hover,
 button:hover {
     background-color: var(--fish-light-deep);
 }
 @media (prefers-color-scheme: dark) {
-    a.btn,
+    .btn,
     button {
         background-color: var(--fish-dark);
     }
-    a.btn:hover,
+    .btn:hover,
     button:hover {
         background-color: var(--fish-black);
     }
@@ -561,9 +561,9 @@ button:hover {
 button [disabled] {
     opacity: 0.8;
 }
-a.btn + a.btn,
-a.btn + button,
-button + a.btn,
+.btn + .btn,
+.btn + button,
+button + .btn,
 button + button {
     margin-left: 5px;
     margin-top: 5px;
