@@ -1,10 +1,10 @@
 @import url(./typography/size.less);
 @import url(./typography/font.less);
 
-:root {
+body {
     box-sizing: border-box;
-    font-size: var(--font-size);
-    font-family: var(--base-font);
+    font-size: var(---fish-font-size-);
+    font-family: var(--fish-base-font);
     letter-spacing: 0.125px;
     --font-color: black;
     color: var(--font-color);
@@ -19,8 +19,13 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
+    body {
         background-color: #1b1b1b;
         --font-color: #bbbbbb;
     }
+}
+
+body.dark {
+    background-color: #1b1b1b;
+    --font-color: #bbbbbb;
 }

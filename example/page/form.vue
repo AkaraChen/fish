@@ -26,7 +26,7 @@
         <input type="date" />
         <label>Select date and time</label>
         <input type="datetime-local" />
-        <label>Select a range</label>
+        <label>Select a file</label>
         <input type="file" />
         <button type="submit">Submit</button>
     </form>

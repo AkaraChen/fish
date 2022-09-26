@@ -1,14 +1,14 @@
 code,
 pre {
-    border-radius: var(--radius);
-    font-family: var(--code-font);
+    border-radius: var(--fish-radius);
+    font-family: var(--fish-code-font);
 }
 
 code {
     display: inline-block;
     padding: 0.125em 0.5em;
     background-color: white;
-    font-size: var(--font-size);
+    font-size: var(---fish-font-size-);
     color: var(--fish-code-color);
 }
 
@@ -22,8 +22,20 @@ pre code {
     overflow: auto;
 }
 
-@media (prefers-color-scheme: dark) {
+.dark() {
     code {
         background-color: var(--fish-dark);
     }
+    pre code {
+        background-color: #050505;
+        color: white;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .dark();
+}
+
+body.dark {
+    .dark();
 }

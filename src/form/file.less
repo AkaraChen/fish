@@ -3,14 +3,14 @@ input[type='file'] {
     appearance: none;
     vertical-align: middle;
     border: none;
-    background-color: transparent;
     height: fit-content;
+    background-color: transparent !important;
 
     &::-webkit-file-upload-button {
         background-color: var(--fish-light);
         border: none;
         color: var(--fish-primary);
-        border-radius: var(--radius);
+        border-radius: var(--fish-radius);
         font-size: 16px;
         display: inline-flex;
         padding-inline-start: 16px;
@@ -23,8 +23,16 @@ input[type='file'] {
     }
 }
 
-@media (prefers-color-scheme: dark) {
+.dark() {
     input[type='file']::-webkit-file-upload-button {
         background-color: var(--fish-dark);
     }
+}
+
+body.dark {
+    .dark();
+}
+
+@media (prefers-color-scheme: dark) {
+    .dark();
 }

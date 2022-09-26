@@ -3,7 +3,7 @@ button {
     background-color: var(--fish-light);
     border: none;
     color: var(--fish-primary);
-    border-radius: var(--radius);
+    border-radius: var(--fish-radius);
     font-size: 16px;
     display: inline-flex;
     padding-inline-start: 16px;
@@ -14,19 +14,27 @@ button {
     margin: 0;
 
     &:hover {
-        background-color: var(--fish-light-deep);
+        background-color: var(--fish-light);
     }
 }
 
-@media (prefers-color-scheme: dark) {
+.dark() {
     .btn,
     button {
         background-color: var(--fish-dark);
 
         &:hover {
-            background-color: var(--fish-black);
+            background-color: var(--fish-grey);
         }
     }
+}
+
+@media (prefers-color-scheme: dark) {
+    .dark();
+}
+
+body.dark {
+    .dark();
 }
 
 button [disabled] {

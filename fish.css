@@ -1,3 +1,180 @@
+body {
+    --fish-size-lg: 16px;
+    --fish-size-md: 16px;
+    --fish-size-sm: 16px;
+    --fish-h1-size-lg: 30px;
+    --fish-h1-size-md: 28px;
+    --fish-h1-size-sm: 26px;
+    --fish-h2-size-lg: 23px;
+    --fish-h2-size-md: 22px;
+    --fish-h2-size-sm: 21px;
+    --fish-h3-size-lg: 19px;
+    --fish-h3-size-md: 18.5px;
+    --fish-h3-size-sm: 18px;
+    --fish-h4-size-lg: 17.5px;
+    --fish-h4-size-md: 17.5px;
+    --fish-h4-size-sm: 17.5px;
+    --fish-h5-size-lg: 17px;
+    --fish-h5-size-md: 17px;
+    --fish-h5-size-sm: 17px;
+    --fish-h6-size-lg: var(--fish-size-lg);
+    --fish-h6-size-md: var(--fish-size-md);
+    --fish-h6-size-sm: var(--fish-size-sm);
+    ---fish-font-size-: var(--fish-size-sm);
+}
+@media screen and (min-width: 768px) {
+    body {
+        ---fish-font-size-: var(--fish-size-md);
+    }
+}
+@media screen and (min-width: 1200px) {
+    body {
+        ---fish-font-size-: var(--fish-size-lg);
+    }
+}
+body p,
+body h6 {
+    ---fish-font-size-: var(--fish-size-sm);
+}
+@media screen and (min-width: 768px) {
+    body p,
+    body h6 {
+        ---fish-font-size-: var(--fish-size-md);
+    }
+}
+@media screen and (min-width: 1200px) {
+    body p,
+    body h6 {
+        ---fish-font-size-: var(--fish-size-lg);
+    }
+}
+body h1 {
+    --h1-size: var(--fish-h1-size-sm);
+}
+@media screen and (min-width: 768px) {
+    body h1 {
+        --h1-size: var(--fish-h1-size-md);
+    }
+}
+@media screen and (min-width: 1200px) {
+    body h1 {
+        --h1-size: var(--fish-h1-size-lg);
+    }
+}
+body h2 {
+    --h2-size: var(--fish-h2-size-sm);
+}
+@media screen and (min-width: 768px) {
+    body h2 {
+        --h2-size: var(--fish-h2-size-md);
+    }
+}
+@media screen and (min-width: 1200px) {
+    body h2 {
+        --h2-size: var(--fish-h2-size-lg);
+    }
+}
+body h3 {
+    --h3-size: var(--fish-h3-size-sm);
+}
+@media screen and (min-width: 768px) {
+    body h3 {
+        --h3-size: var(--fish-h3-size-md);
+    }
+}
+@media screen and (min-width: 1200px) {
+    body h3 {
+        --h3-size: var(--fish-h3-size-lg);
+    }
+}
+body h4 {
+    --h4-size: var(--fish-h4-size-sm);
+}
+@media screen and (min-width: 768px) {
+    body h4 {
+        --h4-size: var(--fish-h4-size-md);
+    }
+}
+@media screen and (min-width: 1200px) {
+    body h4 {
+        --h4-size: var(--fish-h4-size-lg);
+    }
+}
+body h5 {
+    --h5-size: var(--fish-h5-size-sm);
+}
+@media screen and (min-width: 768px) {
+    body h5 {
+        --h5-size: var(--fish-h5-size-md);
+    }
+}
+@media screen and (min-width: 1200px) {
+    body h5 {
+        --h5-size: var(--fish-h5-size-lg);
+    }
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0.875em 0;
+    line-height: 1.4em;
+}
+p,
+h6 {
+    font-size: var(---fish-font-size-);
+}
+h1 {
+    font-size: var(--h1-size);
+}
+h2 {
+    font-size: var(--h2-size);
+}
+h3 {
+    font-size: var(--h3-size);
+}
+h4 {
+    font-size: var(--h4-size);
+}
+h5 {
+    font-size: var(--h5-size);
+}
+p {
+    word-spacing: 1px;
+}
+body {
+    --fish-base-font: pingfang sc, helvetica neue, microsoft yahei,
+        hiragino sans gb, microsoft sans serif, wenquanyi micro hei, sans-serif;
+    --fish-code-font: Fira Code, Jetbrains Mono, consolas, monospace;
+}
+body {
+    box-sizing: border-box;
+    font-size: var(---fish-font-size-);
+    font-family: var(--fish-base-font);
+    letter-spacing: 0.125px;
+    --font-color: black;
+    color: var(--font-color);
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1b1b1b;
+        --font-color: #bbbbbb;
+    }
+}
+body.dark {
+    background-color: #1b1b1b;
+    --font-color: #bbbbbb;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -303,184 +480,10 @@ template {
 [hidden] {
     display: none;
 }
-:root {
-    --radius: 4px;
-    --radius-lg: 8px;
+body {
+    --fish-radius: 4px;
 }
-:root {
-    --size-lg: 16px;
-    --size-md: 16px;
-    --size-sm: 16px;
-    --h1-size-lg: 30px;
-    --h1-size-md: 28px;
-    --h1-size-sm: 26px;
-    --h2-size-lg: 23px;
-    --h2-size-md: 22px;
-    --h2-size-sm: 21px;
-    --h3-size-lg: 19px;
-    --h3-size-md: 18.5px;
-    --h3-size-sm: 18px;
-    --h4-size-lg: 17.5px;
-    --h4-size-md: 17.5px;
-    --h4-size-sm: 17.5px;
-    --h5-size-lg: 17px;
-    --h5-size-md: 17px;
-    --h5-size-sm: 17px;
-    --h6-size-lg: var(--size-lg);
-    --h6-size-md: var(--size-md);
-    --h6-size-sm: var(--size-sm);
-    --font-size: var(--size-sm);
-}
-@media screen and (min-width: 768px) {
-    :root {
-        --font-size: var(--size-md);
-    }
-}
-@media screen and (min-width: 1200px) {
-    :root {
-        --font-size: var(--size-lg);
-    }
-}
-:root p,
-:root h6 {
-    --font-size: var(--size-sm);
-}
-@media screen and (min-width: 768px) {
-    :root p,
-    :root h6 {
-        --font-size: var(--size-md);
-    }
-}
-@media screen and (min-width: 1200px) {
-    :root p,
-    :root h6 {
-        --font-size: var(--size-lg);
-    }
-}
-:root h1 {
-    --h1-size: var(--h1-size-sm);
-}
-@media screen and (min-width: 768px) {
-    :root h1 {
-        --h1-size: var(--h1-size-md);
-    }
-}
-@media screen and (min-width: 1200px) {
-    :root h1 {
-        --h1-size: var(--h1-size-lg);
-    }
-}
-:root h2 {
-    --h2-size: var(--h2-size-sm);
-}
-@media screen and (min-width: 768px) {
-    :root h2 {
-        --h2-size: var(--h2-size-md);
-    }
-}
-@media screen and (min-width: 1200px) {
-    :root h2 {
-        --h2-size: var(--h2-size-lg);
-    }
-}
-:root h3 {
-    --h3-size: var(--h3-size-sm);
-}
-@media screen and (min-width: 768px) {
-    :root h3 {
-        --h3-size: var(--h3-size-md);
-    }
-}
-@media screen and (min-width: 1200px) {
-    :root h3 {
-        --h3-size: var(--h3-size-lg);
-    }
-}
-:root h4 {
-    --h4-size: var(--h4-size-sm);
-}
-@media screen and (min-width: 768px) {
-    :root h4 {
-        --h4-size: var(--h4-size-md);
-    }
-}
-@media screen and (min-width: 1200px) {
-    :root h4 {
-        --h4-size: var(--h4-size-lg);
-    }
-}
-:root h5 {
-    --h5-size: var(--h5-size-sm);
-}
-@media screen and (min-width: 768px) {
-    :root h5 {
-        --h5-size: var(--h5-size-md);
-    }
-}
-@media screen and (min-width: 1200px) {
-    :root h5 {
-        --h5-size: var(--h5-size-lg);
-    }
-}
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0.875em 0;
-    line-height: 1.4em;
-}
-p,
-h6 {
-    font-size: var(--font-size);
-}
-h1 {
-    font-size: var(--h1-size);
-}
-h2 {
-    font-size: var(--h2-size);
-}
-h3 {
-    font-size: var(--h3-size);
-}
-h4 {
-    font-size: var(--h4-size);
-}
-h5 {
-    font-size: var(--h5-size);
-}
-p {
-    word-spacing: 1px;
-}
-:root {
-    --base-font: pingfang sc, helvetica neue, microsoft yahei, hiragino sans gb,
-        microsoft sans serif, wenquanyi micro hei, sans-serif;
-    --code-font: Jetbrains Mono, Fira Code, consolas, monospace;
-}
-:root {
-    box-sizing: border-box;
-    font-size: var(--font-size);
-    font-family: var(--base-font);
-    letter-spacing: 0.125px;
-    --font-color: black;
-    color: var(--font-color);
-}
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-}
-@media (prefers-color-scheme: dark) {
-    :root {
-        background-color: #1b1b1b;
-        --font-color: #bbbbbb;
-    }
-}
-:root {
+body {
     --fish-blue: #3498db;
     --fish-blue-deep: #2980b9;
     --fish-cyan: #1abc9c;
@@ -504,7 +507,7 @@ p {
     --fish-primary-deep: var(--fish-blue-deep);
 }
 @media (prefers-color-scheme: dark) {
-    :root {
+    body {
         --fish-primary: var(--fish-primary-deep);
         --fish-cyan: var(--fish-cyan-deep);
         --fish-green: var(--fish-green-deep);
@@ -512,6 +515,70 @@ p {
         --fish-grey: var(--fish-grey-deep);
         --fish-light: var(--fish-light-deep);
     }
+    .btn,
+    button {
+        background-color: var(--fish-dark);
+    }
+    .btn:hover,
+    button:hover {
+        background-color: var(--fish-grey);
+    }
+    code {
+        background-color: var(--fish-dark);
+    }
+    pre code {
+        background-color: #050505;
+        color: white;
+    }
+    table {
+        background-color: var(--fish-dark);
+        border: none;
+    }
+    table tr:nth-child(even) {
+        background-color: var(--fish-dark-deep);
+    }
+    table thead {
+        background-color: var(--fish-dark-deep);
+    }
+    details {
+        background-color: var(--fish-dark);
+    }
+    input {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+        border-color: transparent;
+    }
+    input::placeholder {
+        color: var(--fish-font-color);
+    }
+    input:focus-visible {
+        border-color: none;
+    }
+    select {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+    }
+    input[type='file']::-webkit-file-upload-button {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local'],
+    input[type='date'] {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local']::-webkit-calendar-picker-indicator,
+    input[type='date']::-webkit-calendar-picker-indicator {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+            brightness(103%) contrast(103%);
+        padding-right: 6px;
+    }
+}
+body.dark {
+    --fish-primary: var(--fish-primary-deep);
+    --fish-cyan: var(--fish-cyan-deep);
+    --fish-green: var(--fish-green-deep);
+    --fish-red: var(--fish-red-deep);
+    --fish-grey: var(--fish-grey-deep);
+    --fish-light: var(--fish-light-deep);
 }
 *.blue {
     --fish-primary: var(--fish-blue);
@@ -534,7 +601,7 @@ button {
     background-color: var(--fish-light);
     border: none;
     color: var(--fish-primary);
-    border-radius: var(--radius);
+    border-radius: var(--fish-radius);
     font-size: 16px;
     display: inline-flex;
     padding-inline-start: 16px;
@@ -546,17 +613,137 @@ button {
 }
 .btn:hover,
 button:hover {
-    background-color: var(--fish-light-deep);
+    background-color: var(--fish-light);
 }
 @media (prefers-color-scheme: dark) {
+    body {
+        --fish-primary: var(--fish-primary-deep);
+        --fish-cyan: var(--fish-cyan-deep);
+        --fish-green: var(--fish-green-deep);
+        --fish-red: var(--fish-red-deep);
+        --fish-grey: var(--fish-grey-deep);
+        --fish-light: var(--fish-light-deep);
+    }
     .btn,
     button {
         background-color: var(--fish-dark);
     }
     .btn:hover,
     button:hover {
-        background-color: var(--fish-black);
+        background-color: var(--fish-grey);
     }
+    code {
+        background-color: var(--fish-dark);
+    }
+    pre code {
+        background-color: #050505;
+        color: white;
+    }
+    table {
+        background-color: var(--fish-dark);
+        border: none;
+    }
+    table tr:nth-child(even) {
+        background-color: var(--fish-dark-deep);
+    }
+    table thead {
+        background-color: var(--fish-dark-deep);
+    }
+    details {
+        background-color: var(--fish-dark);
+    }
+    input {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+        border-color: transparent;
+    }
+    input::placeholder {
+        color: var(--fish-font-color);
+    }
+    input:focus-visible {
+        border-color: none;
+    }
+    select {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+    }
+    input[type='file']::-webkit-file-upload-button {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local'],
+    input[type='date'] {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local']::-webkit-calendar-picker-indicator,
+    input[type='date']::-webkit-calendar-picker-indicator {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+            brightness(103%) contrast(103%);
+        padding-right: 6px;
+    }
+}
+body.dark body {
+    --fish-primary: var(--fish-primary-deep);
+    --fish-cyan: var(--fish-cyan-deep);
+    --fish-green: var(--fish-green-deep);
+    --fish-red: var(--fish-red-deep);
+    --fish-grey: var(--fish-grey-deep);
+    --fish-light: var(--fish-light-deep);
+}
+body.dark .btn,
+body.dark button {
+    background-color: var(--fish-dark);
+}
+body.dark .btn:hover,
+body.dark button:hover {
+    background-color: var(--fish-grey);
+}
+body.dark code {
+    background-color: var(--fish-dark);
+}
+body.dark pre code {
+    background-color: #050505;
+    color: white;
+}
+body.dark table {
+    background-color: var(--fish-dark);
+    border: none;
+}
+body.dark table tr:nth-child(even) {
+    background-color: var(--fish-dark-deep);
+}
+body.dark table thead {
+    background-color: var(--fish-dark-deep);
+}
+body.dark details {
+    background-color: var(--fish-dark);
+}
+body.dark input {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+    border-color: transparent;
+}
+body.dark input::placeholder {
+    color: var(--fish-font-color);
+}
+body.dark input:focus-visible {
+    border-color: none;
+}
+body.dark select {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+}
+body.dark input[type='file']::-webkit-file-upload-button {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local'],
+body.dark input[type='date'] {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local']::-webkit-calendar-picker-indicator,
+body.dark input[type='date']::-webkit-calendar-picker-indicator {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+        brightness(103%) contrast(103%);
+    padding-right: 6px;
 }
 button [disabled] {
     opacity: 0.8;
@@ -569,7 +756,7 @@ button + button {
     margin-top: 5px;
 }
 blockquote {
-    font-size: var(--font-size);
+    font-size: var(---fish-font-size-);
     border-left: 5px solid var(--fish-grey);
     padding: 0.25em 1em;
     opacity: 0.8;
@@ -604,14 +791,14 @@ hgroup > *:last-child::before {
 }
 code,
 pre {
-    border-radius: var(--radius);
-    font-family: var(--code-font);
+    border-radius: var(--fish-radius);
+    font-family: var(--fish-code-font);
 }
 code {
     display: inline-block;
     padding: 0.125em 0.5em;
     background-color: white;
-    font-size: var(--font-size);
+    font-size: var(---fish-font-size-);
     color: var(--fish-code-color);
 }
 pre code {
@@ -624,18 +811,143 @@ pre code {
     overflow: auto;
 }
 @media (prefers-color-scheme: dark) {
+    body {
+        --fish-primary: var(--fish-primary-deep);
+        --fish-cyan: var(--fish-cyan-deep);
+        --fish-green: var(--fish-green-deep);
+        --fish-red: var(--fish-red-deep);
+        --fish-grey: var(--fish-grey-deep);
+        --fish-light: var(--fish-light-deep);
+    }
+    .btn,
+    button {
+        background-color: var(--fish-dark);
+    }
+    .btn:hover,
+    button:hover {
+        background-color: var(--fish-grey);
+    }
     code {
         background-color: var(--fish-dark);
     }
+    pre code {
+        background-color: #050505;
+        color: white;
+    }
+    table {
+        background-color: var(--fish-dark);
+        border: none;
+    }
+    table tr:nth-child(even) {
+        background-color: var(--fish-dark-deep);
+    }
+    table thead {
+        background-color: var(--fish-dark-deep);
+    }
+    details {
+        background-color: var(--fish-dark);
+    }
+    input {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+        border-color: transparent;
+    }
+    input::placeholder {
+        color: var(--fish-font-color);
+    }
+    input:focus-visible {
+        border-color: none;
+    }
+    select {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+    }
+    input[type='file']::-webkit-file-upload-button {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local'],
+    input[type='date'] {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local']::-webkit-calendar-picker-indicator,
+    input[type='date']::-webkit-calendar-picker-indicator {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+            brightness(103%) contrast(103%);
+        padding-right: 6px;
+    }
+}
+body.dark body {
+    --fish-primary: var(--fish-primary-deep);
+    --fish-cyan: var(--fish-cyan-deep);
+    --fish-green: var(--fish-green-deep);
+    --fish-red: var(--fish-red-deep);
+    --fish-grey: var(--fish-grey-deep);
+    --fish-light: var(--fish-light-deep);
+}
+body.dark .btn,
+body.dark button {
+    background-color: var(--fish-dark);
+}
+body.dark .btn:hover,
+body.dark button:hover {
+    background-color: var(--fish-grey);
+}
+body.dark code {
+    background-color: var(--fish-dark);
+}
+body.dark pre code {
+    background-color: #050505;
+    color: white;
+}
+body.dark table {
+    background-color: var(--fish-dark);
+    border: none;
+}
+body.dark table tr:nth-child(even) {
+    background-color: var(--fish-dark-deep);
+}
+body.dark table thead {
+    background-color: var(--fish-dark-deep);
+}
+body.dark details {
+    background-color: var(--fish-dark);
+}
+body.dark input {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+    border-color: transparent;
+}
+body.dark input::placeholder {
+    color: var(--fish-font-color);
+}
+body.dark input:focus-visible {
+    border-color: none;
+}
+body.dark select {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+}
+body.dark input[type='file']::-webkit-file-upload-button {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local'],
+body.dark input[type='date'] {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local']::-webkit-calendar-picker-indicator,
+body.dark input[type='date']::-webkit-calendar-picker-indicator {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+        brightness(103%) contrast(103%);
+    padding-right: 6px;
 }
 kbd {
     display: inline-block;
     background-color: #050505;
     color: white;
     padding: 0.25em 0.5em;
-    border-radius: var(--radius);
-    font-size: var(--font-size);
-    font-family: var(--code-font);
+    border-radius: var(--fish-radius);
+    font-size: var(---fish-font-size-);
+    font-family: var(--fish-code-font);
 }
 table {
     border-collapse: collapse;
@@ -664,6 +976,29 @@ table th {
     font-weight: normal;
 }
 @media (prefers-color-scheme: dark) {
+    body {
+        --fish-primary: var(--fish-primary-deep);
+        --fish-cyan: var(--fish-cyan-deep);
+        --fish-green: var(--fish-green-deep);
+        --fish-red: var(--fish-red-deep);
+        --fish-grey: var(--fish-grey-deep);
+        --fish-light: var(--fish-light-deep);
+    }
+    .btn,
+    button {
+        background-color: var(--fish-dark);
+    }
+    .btn:hover,
+    button:hover {
+        background-color: var(--fish-grey);
+    }
+    code {
+        background-color: var(--fish-dark);
+    }
+    pre code {
+        background-color: #050505;
+        color: white;
+    }
     table {
         background-color: var(--fish-dark);
         border: none;
@@ -674,17 +1009,237 @@ table th {
     table thead {
         background-color: var(--fish-dark-deep);
     }
+    details {
+        background-color: var(--fish-dark);
+    }
+    input {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+        border-color: transparent;
+    }
+    input::placeholder {
+        color: var(--fish-font-color);
+    }
+    input:focus-visible {
+        border-color: none;
+    }
+    select {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+    }
+    input[type='file']::-webkit-file-upload-button {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local'],
+    input[type='date'] {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local']::-webkit-calendar-picker-indicator,
+    input[type='date']::-webkit-calendar-picker-indicator {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+            brightness(103%) contrast(103%);
+        padding-right: 6px;
+    }
+}
+body.dark body {
+    --fish-primary: var(--fish-primary-deep);
+    --fish-cyan: var(--fish-cyan-deep);
+    --fish-green: var(--fish-green-deep);
+    --fish-red: var(--fish-red-deep);
+    --fish-grey: var(--fish-grey-deep);
+    --fish-light: var(--fish-light-deep);
+}
+body.dark .btn,
+body.dark button {
+    background-color: var(--fish-dark);
+}
+body.dark .btn:hover,
+body.dark button:hover {
+    background-color: var(--fish-grey);
+}
+body.dark code {
+    background-color: var(--fish-dark);
+}
+body.dark pre code {
+    background-color: #050505;
+    color: white;
+}
+body.dark table {
+    background-color: var(--fish-dark);
+    border: none;
+}
+body.dark table tr:nth-child(even) {
+    background-color: var(--fish-dark-deep);
+}
+body.dark table thead {
+    background-color: var(--fish-dark-deep);
+}
+body.dark details {
+    background-color: var(--fish-dark);
+}
+body.dark input {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+    border-color: transparent;
+}
+body.dark input::placeholder {
+    color: var(--fish-font-color);
+}
+body.dark input:focus-visible {
+    border-color: none;
+}
+body.dark select {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+}
+body.dark input[type='file']::-webkit-file-upload-button {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local'],
+body.dark input[type='date'] {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local']::-webkit-calendar-picker-indicator,
+body.dark input[type='date']::-webkit-calendar-picker-indicator {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+        brightness(103%) contrast(103%);
+    padding-right: 6px;
 }
 details {
     margin: 0.5em 0;
     background-color: var(--fish-white);
     padding: 1em;
-    border-radius: var(--radius);
+    border-radius: var(--fish-radius);
 }
 @media (prefers-color-scheme: dark) {
+    body {
+        --fish-primary: var(--fish-primary-deep);
+        --fish-cyan: var(--fish-cyan-deep);
+        --fish-green: var(--fish-green-deep);
+        --fish-red: var(--fish-red-deep);
+        --fish-grey: var(--fish-grey-deep);
+        --fish-light: var(--fish-light-deep);
+    }
+    .btn,
+    button {
+        background-color: var(--fish-dark);
+    }
+    .btn:hover,
+    button:hover {
+        background-color: var(--fish-grey);
+    }
+    code {
+        background-color: var(--fish-dark);
+    }
+    pre code {
+        background-color: #050505;
+        color: white;
+    }
+    table {
+        background-color: var(--fish-dark);
+        border: none;
+    }
+    table tr:nth-child(even) {
+        background-color: var(--fish-dark-deep);
+    }
+    table thead {
+        background-color: var(--fish-dark-deep);
+    }
     details {
         background-color: var(--fish-dark);
     }
+    input {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+        border-color: transparent;
+    }
+    input::placeholder {
+        color: var(--fish-font-color);
+    }
+    input:focus-visible {
+        border-color: none;
+    }
+    select {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+    }
+    input[type='file']::-webkit-file-upload-button {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local'],
+    input[type='date'] {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local']::-webkit-calendar-picker-indicator,
+    input[type='date']::-webkit-calendar-picker-indicator {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+            brightness(103%) contrast(103%);
+        padding-right: 6px;
+    }
+}
+body.dark body {
+    --fish-primary: var(--fish-primary-deep);
+    --fish-cyan: var(--fish-cyan-deep);
+    --fish-green: var(--fish-green-deep);
+    --fish-red: var(--fish-red-deep);
+    --fish-grey: var(--fish-grey-deep);
+    --fish-light: var(--fish-light-deep);
+}
+body.dark .btn,
+body.dark button {
+    background-color: var(--fish-dark);
+}
+body.dark .btn:hover,
+body.dark button:hover {
+    background-color: var(--fish-grey);
+}
+body.dark code {
+    background-color: var(--fish-dark);
+}
+body.dark pre code {
+    background-color: #050505;
+    color: white;
+}
+body.dark table {
+    background-color: var(--fish-dark);
+    border: none;
+}
+body.dark table tr:nth-child(even) {
+    background-color: var(--fish-dark-deep);
+}
+body.dark table thead {
+    background-color: var(--fish-dark-deep);
+}
+body.dark details {
+    background-color: var(--fish-dark);
+}
+body.dark input {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+    border-color: transparent;
+}
+body.dark input::placeholder {
+    color: var(--fish-font-color);
+}
+body.dark input:focus-visible {
+    border-color: none;
+}
+body.dark select {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+}
+body.dark input[type='file']::-webkit-file-upload-button {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local'],
+body.dark input[type='date'] {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local']::-webkit-calendar-picker-indicator,
+body.dark input[type='date']::-webkit-calendar-picker-indicator {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+        brightness(103%) contrast(103%);
+    padding-right: 6px;
 }
 footer {
     margin: 0.25em;
@@ -736,7 +1291,7 @@ a {
     text-decoration: none;
     background-color: inherit;
     padding: 0;
-    font-size: var(--font-size);
+    font-size: var(---fish-font-size-);
 }
 a.button {
     color: var(--fish-primary);
@@ -744,7 +1299,7 @@ a.button {
     background-color: var(--fish-light);
     width: fit-content;
     padding: 0.5em;
-    border-radius: var(--radius);
+    border-radius: var(--fish-radius);
     transition: background-color 0.25s;
 }
 a.button::after {
@@ -756,7 +1311,7 @@ a.button:hover {
 ul,
 ol {
     margin: 1em;
-    font-size: var(--font-size);
+    font-size: var(---fish-font-size-);
 }
 li {
     margin-top: 10px;
@@ -772,7 +1327,7 @@ fieldset {
     margin-bottom: 0.75em;
 }
 legend {
-    font-size: var(--font-size);
+    font-size: var(---fish-font-size-);
     margin-bottom: 0.25em;
 }
 fieldset > * {
@@ -785,7 +1340,7 @@ input {
     margin: 0.75em 0;
     padding: 0.5em;
     border: rgba(0, 0, 0, 0.3) 1.4px solid;
-    border-radius: var(--radius);
+    border-radius: var(--fish-radius);
     font-size: 16px;
     display: block;
     transition: 0.25s border;
@@ -794,20 +1349,137 @@ input:focus {
     border-color: var(--fish-primary);
 }
 @media (prefers-color-scheme: dark) {
+    body {
+        --fish-primary: var(--fish-primary-deep);
+        --fish-cyan: var(--fish-cyan-deep);
+        --fish-green: var(--fish-green-deep);
+        --fish-red: var(--fish-red-deep);
+        --fish-grey: var(--fish-grey-deep);
+        --fish-light: var(--fish-light-deep);
+    }
+    .btn,
+    button {
+        background-color: var(--fish-dark);
+    }
+    .btn:hover,
+    button:hover {
+        background-color: var(--fish-grey);
+    }
+    code {
+        background-color: var(--fish-dark);
+    }
+    pre code {
+        background-color: #050505;
+        color: white;
+    }
+    table {
+        background-color: var(--fish-dark);
+        border: none;
+    }
+    table tr:nth-child(even) {
+        background-color: var(--fish-dark-deep);
+    }
+    table thead {
+        background-color: var(--fish-dark-deep);
+    }
+    details {
+        background-color: var(--fish-dark);
+    }
     input {
         background-color: var(--fish-dark);
-        color: var(--fish-light);
+        color: var(--fish-font-color);
         border-color: transparent;
     }
     input::placeholder {
-        color: var(--fish-light);
+        color: var(--fish-font-color);
     }
     input:focus-visible {
         border-color: none;
     }
+    select {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+    }
+    input[type='file']::-webkit-file-upload-button {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local'],
+    input[type='date'] {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local']::-webkit-calendar-picker-indicator,
+    input[type='date']::-webkit-calendar-picker-indicator {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+            brightness(103%) contrast(103%);
+        padding-right: 6px;
+    }
+}
+body.dark body {
+    --fish-primary: var(--fish-primary-deep);
+    --fish-cyan: var(--fish-cyan-deep);
+    --fish-green: var(--fish-green-deep);
+    --fish-red: var(--fish-red-deep);
+    --fish-grey: var(--fish-grey-deep);
+    --fish-light: var(--fish-light-deep);
+}
+body.dark .btn,
+body.dark button {
+    background-color: var(--fish-dark);
+}
+body.dark .btn:hover,
+body.dark button:hover {
+    background-color: var(--fish-grey);
+}
+body.dark code {
+    background-color: var(--fish-dark);
+}
+body.dark pre code {
+    background-color: #050505;
+    color: white;
+}
+body.dark table {
+    background-color: var(--fish-dark);
+    border: none;
+}
+body.dark table tr:nth-child(even) {
+    background-color: var(--fish-dark-deep);
+}
+body.dark table thead {
+    background-color: var(--fish-dark-deep);
+}
+body.dark details {
+    background-color: var(--fish-dark);
+}
+body.dark input {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+    border-color: transparent;
+}
+body.dark input::placeholder {
+    color: var(--fish-font-color);
+}
+body.dark input:focus-visible {
+    border-color: none;
+}
+body.dark select {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+}
+body.dark input[type='file']::-webkit-file-upload-button {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local'],
+body.dark input[type='date'] {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local']::-webkit-calendar-picker-indicator,
+body.dark input[type='date']::-webkit-calendar-picker-indicator {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+        brightness(103%) contrast(103%);
+    padding-right: 6px;
 }
 label {
-    font-size: calc(var(--font-size) - 1px);
+    font-size: calc(var(---fish-font-size-) - 1px);
     display: inline-block;
     opacity: 0.9;
 }
@@ -824,7 +1496,7 @@ select {
     height: 2.1em;
     margin: 0.75em 0;
     border: rgba(0, 0, 0, 0.3) 1.4px solid;
-    border-radius: var(--radius);
+    border-radius: var(--fish-radius);
     caret-color: gray;
     font-size: 16px;
     appearance: none;
@@ -839,10 +1511,134 @@ label + select {
     margin-top: 0.25em;
 }
 @media (prefers-color-scheme: dark) {
+    body {
+        --fish-primary: var(--fish-primary-deep);
+        --fish-cyan: var(--fish-cyan-deep);
+        --fish-green: var(--fish-green-deep);
+        --fish-red: var(--fish-red-deep);
+        --fish-grey: var(--fish-grey-deep);
+        --fish-light: var(--fish-light-deep);
+    }
+    .btn,
+    button {
+        background-color: var(--fish-dark);
+    }
+    .btn:hover,
+    button:hover {
+        background-color: var(--fish-grey);
+    }
+    code {
+        background-color: var(--fish-dark);
+    }
+    pre code {
+        background-color: #050505;
+        color: white;
+    }
+    table {
+        background-color: var(--fish-dark);
+        border: none;
+    }
+    table tr:nth-child(even) {
+        background-color: var(--fish-dark-deep);
+    }
+    table thead {
+        background-color: var(--fish-dark-deep);
+    }
+    details {
+        background-color: var(--fish-dark);
+    }
+    input {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+        border-color: transparent;
+    }
+    input::placeholder {
+        color: var(--fish-font-color);
+    }
+    input:focus-visible {
+        border-color: none;
+    }
     select {
         background-color: var(--fish-dark);
-        color: var(--fish-light);
+        color: var(--fish-font-color);
     }
+    input[type='file']::-webkit-file-upload-button {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local'],
+    input[type='date'] {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local']::-webkit-calendar-picker-indicator,
+    input[type='date']::-webkit-calendar-picker-indicator {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+            brightness(103%) contrast(103%);
+        padding-right: 6px;
+    }
+}
+body.dark body {
+    --fish-primary: var(--fish-primary-deep);
+    --fish-cyan: var(--fish-cyan-deep);
+    --fish-green: var(--fish-green-deep);
+    --fish-red: var(--fish-red-deep);
+    --fish-grey: var(--fish-grey-deep);
+    --fish-light: var(--fish-light-deep);
+}
+body.dark .btn,
+body.dark button {
+    background-color: var(--fish-dark);
+}
+body.dark .btn:hover,
+body.dark button:hover {
+    background-color: var(--fish-grey);
+}
+body.dark code {
+    background-color: var(--fish-dark);
+}
+body.dark pre code {
+    background-color: #050505;
+    color: white;
+}
+body.dark table {
+    background-color: var(--fish-dark);
+    border: none;
+}
+body.dark table tr:nth-child(even) {
+    background-color: var(--fish-dark-deep);
+}
+body.dark table thead {
+    background-color: var(--fish-dark-deep);
+}
+body.dark details {
+    background-color: var(--fish-dark);
+}
+body.dark input {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+    border-color: transparent;
+}
+body.dark input::placeholder {
+    color: var(--fish-font-color);
+}
+body.dark input:focus-visible {
+    border-color: none;
+}
+body.dark select {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+}
+body.dark input[type='file']::-webkit-file-upload-button {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local'],
+body.dark input[type='date'] {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local']::-webkit-calendar-picker-indicator,
+body.dark input[type='date']::-webkit-calendar-picker-indicator {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+        brightness(103%) contrast(103%);
+    padding-right: 6px;
 }
 input[type='radio'] {
     display: inline;
@@ -875,7 +1671,7 @@ input[type='checkbox'] {
     width: 1em;
     height: 1em;
     margin: 0.5em 0;
-    border-radius: var(--radius);
+    border-radius: var(--fish-radius);
     padding: 0;
 }
 input[type='checkbox'] + label {
@@ -888,7 +1684,7 @@ input[type='checkbox']::before {
     display: inline-block;
     width: 1em;
     height: 1em;
-    border-radius: var(--radius);
+    border-radius: var(--fish-radius);
 }
 input[type='checkbox']:checked::before {
     background-color: var(--fish-primary);
@@ -902,14 +1698,14 @@ input[type='file'] {
     appearance: none;
     vertical-align: middle;
     border: none;
-    background-color: transparent;
     height: fit-content;
+    background-color: transparent !important;
 }
 input[type='file']::-webkit-file-upload-button {
     background-color: var(--fish-light);
     border: none;
     color: var(--fish-primary);
-    border-radius: var(--radius);
+    border-radius: var(--fish-radius);
     font-size: 16px;
     display: inline-flex;
     padding-inline-start: 16px;
@@ -920,18 +1716,125 @@ input[type='file']::-webkit-file-upload-button {
     margin: 0;
     margin-right: 10px;
 }
+body.dark body {
+    --fish-primary: var(--fish-primary-deep);
+    --fish-cyan: var(--fish-cyan-deep);
+    --fish-green: var(--fish-green-deep);
+    --fish-red: var(--fish-red-deep);
+    --fish-grey: var(--fish-grey-deep);
+    --fish-light: var(--fish-light-deep);
+}
+body.dark .btn,
+body.dark button {
+    background-color: var(--fish-dark);
+}
+body.dark .btn:hover,
+body.dark button:hover {
+    background-color: var(--fish-grey);
+}
+body.dark code {
+    background-color: var(--fish-dark);
+}
+body.dark pre code {
+    background-color: #050505;
+    color: white;
+}
+body.dark table {
+    background-color: var(--fish-dark);
+    border: none;
+}
+body.dark table tr:nth-child(even) {
+    background-color: var(--fish-dark-deep);
+}
+body.dark table thead {
+    background-color: var(--fish-dark-deep);
+}
+body.dark details {
+    background-color: var(--fish-dark);
+}
+body.dark input {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+    border-color: transparent;
+}
+body.dark input::placeholder {
+    color: var(--fish-font-color);
+}
+body.dark input:focus-visible {
+    border-color: none;
+}
+body.dark select {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+}
+body.dark input[type='file']::-webkit-file-upload-button {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local'],
+body.dark input[type='date'] {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local']::-webkit-calendar-picker-indicator,
+body.dark input[type='date']::-webkit-calendar-picker-indicator {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+        brightness(103%) contrast(103%);
+    padding-right: 6px;
+}
 @media (prefers-color-scheme: dark) {
+    body {
+        --fish-primary: var(--fish-primary-deep);
+        --fish-cyan: var(--fish-cyan-deep);
+        --fish-green: var(--fish-green-deep);
+        --fish-red: var(--fish-red-deep);
+        --fish-grey: var(--fish-grey-deep);
+        --fish-light: var(--fish-light-deep);
+    }
+    .btn,
+    button {
+        background-color: var(--fish-dark);
+    }
+    .btn:hover,
+    button:hover {
+        background-color: var(--fish-grey);
+    }
+    code {
+        background-color: var(--fish-dark);
+    }
+    pre code {
+        background-color: #050505;
+        color: white;
+    }
+    table {
+        background-color: var(--fish-dark);
+        border: none;
+    }
+    table tr:nth-child(even) {
+        background-color: var(--fish-dark-deep);
+    }
+    table thead {
+        background-color: var(--fish-dark-deep);
+    }
+    details {
+        background-color: var(--fish-dark);
+    }
+    input {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+        border-color: transparent;
+    }
+    input::placeholder {
+        color: var(--fish-font-color);
+    }
+    input:focus-visible {
+        border-color: none;
+    }
+    select {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+    }
     input[type='file']::-webkit-file-upload-button {
         background-color: var(--fish-dark);
     }
-}
-input[type='datetime-local'],
-input[type='date'] {
-    appearance: none;
-    color: var(--font-color);
-    background-color: transparent;
-}
-@media (prefers-color-scheme: dark) {
     input[type='datetime-local'],
     input[type='date'] {
         background-color: var(--fish-dark);
@@ -942,4 +1845,140 @@ input[type='date'] {
             brightness(103%) contrast(103%);
         padding-right: 6px;
     }
+}
+input[type='datetime-local'],
+input[type='date'] {
+    appearance: none;
+    color: var(--font-color);
+    background-color: transparent;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        --fish-primary: var(--fish-primary-deep);
+        --fish-cyan: var(--fish-cyan-deep);
+        --fish-green: var(--fish-green-deep);
+        --fish-red: var(--fish-red-deep);
+        --fish-grey: var(--fish-grey-deep);
+        --fish-light: var(--fish-light-deep);
+    }
+    .btn,
+    button {
+        background-color: var(--fish-dark);
+    }
+    .btn:hover,
+    button:hover {
+        background-color: var(--fish-grey);
+    }
+    code {
+        background-color: var(--fish-dark);
+    }
+    pre code {
+        background-color: #050505;
+        color: white;
+    }
+    table {
+        background-color: var(--fish-dark);
+        border: none;
+    }
+    table tr:nth-child(even) {
+        background-color: var(--fish-dark-deep);
+    }
+    table thead {
+        background-color: var(--fish-dark-deep);
+    }
+    details {
+        background-color: var(--fish-dark);
+    }
+    input {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+        border-color: transparent;
+    }
+    input::placeholder {
+        color: var(--fish-font-color);
+    }
+    input:focus-visible {
+        border-color: none;
+    }
+    select {
+        background-color: var(--fish-dark);
+        color: var(--fish-font-color);
+    }
+    input[type='file']::-webkit-file-upload-button {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local'],
+    input[type='date'] {
+        background-color: var(--fish-dark);
+    }
+    input[type='datetime-local']::-webkit-calendar-picker-indicator,
+    input[type='date']::-webkit-calendar-picker-indicator {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+            brightness(103%) contrast(103%);
+        padding-right: 6px;
+    }
+}
+body.dark body {
+    --fish-primary: var(--fish-primary-deep);
+    --fish-cyan: var(--fish-cyan-deep);
+    --fish-green: var(--fish-green-deep);
+    --fish-red: var(--fish-red-deep);
+    --fish-grey: var(--fish-grey-deep);
+    --fish-light: var(--fish-light-deep);
+}
+body.dark .btn,
+body.dark button {
+    background-color: var(--fish-dark);
+}
+body.dark .btn:hover,
+body.dark button:hover {
+    background-color: var(--fish-grey);
+}
+body.dark code {
+    background-color: var(--fish-dark);
+}
+body.dark pre code {
+    background-color: #050505;
+    color: white;
+}
+body.dark table {
+    background-color: var(--fish-dark);
+    border: none;
+}
+body.dark table tr:nth-child(even) {
+    background-color: var(--fish-dark-deep);
+}
+body.dark table thead {
+    background-color: var(--fish-dark-deep);
+}
+body.dark details {
+    background-color: var(--fish-dark);
+}
+body.dark input {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+    border-color: transparent;
+}
+body.dark input::placeholder {
+    color: var(--fish-font-color);
+}
+body.dark input:focus-visible {
+    border-color: none;
+}
+body.dark select {
+    background-color: var(--fish-dark);
+    color: var(--fish-font-color);
+}
+body.dark input[type='file']::-webkit-file-upload-button {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local'],
+body.dark input[type='date'] {
+    background-color: var(--fish-dark);
+}
+body.dark input[type='datetime-local']::-webkit-calendar-picker-indicator,
+body.dark input[type='date']::-webkit-calendar-picker-indicator {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+        brightness(103%) contrast(103%);
+    padding-right: 6px;
 }

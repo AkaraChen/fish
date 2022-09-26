@@ -5,7 +5,7 @@ input {
     margin: 0.75em 0;
     padding: 0.5em;
     border: rgb(0 0 0 / 30%) 1.4px solid;
-    border-radius: var(--radius);
+    border-radius: var(--fish-radius);
     font-size: 16px;
     display: block;
     transition: 0.25s border;
@@ -15,18 +15,26 @@ input {
     }
 }
 
-@media (prefers-color-scheme: dark) {
+.dark() {
     input {
         background-color: var(--fish-dark);
-        color: var(--fish-light);
+        color: var(--fish-font-color);
         border-color: transparent;
 
         &::placeholder {
-            color: var(--fish-light);
+            color: var(--fish-font-color);
         }
 
         &:focus-visible {
             border-color: none;
         }
     }
+}
+
+@media (prefers-color-scheme: dark) {
+    .dark();
+}
+
+body.dark {
+    .dark();
 }

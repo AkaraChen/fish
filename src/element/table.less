@@ -30,7 +30,7 @@ table th {
     font-weight: normal;
 }
 
-@media (prefers-color-scheme: dark) {
+.dark() {
     table {
         background-color: var(--fish-dark);
         border: none;
@@ -43,4 +43,12 @@ table th {
     table thead {
         background-color: var(--fish-dark-deep);
     }
+}
+
+@media (prefers-color-scheme: dark) {
+    .dark();
+}
+
+body.dark {
+    .dark();
 }

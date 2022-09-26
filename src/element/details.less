@@ -2,11 +2,19 @@ details {
     margin: 0.5em 0;
     background-color: var(--fish-white);
     padding: 1em;
-    border-radius: var(--radius);
+    border-radius: var(--fish-radius);
 }
 
-@media (prefers-color-scheme: dark) {
+.dark() {
     details {
         background-color: var(--fish-dark);
     }
+}
+
+@media (prefers-color-scheme: dark) {
+    .dark();
+}
+
+body.dark {
+    .dark();
 }

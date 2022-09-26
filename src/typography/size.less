@@ -1,105 +1,105 @@
-:root {
-    --size-lg: 16px;
-    --size-md: 16px;
-    --size-sm: 16px;
-    --h1-size-lg: 30px;
-    --h1-size-md: 28px;
-    --h1-size-sm: 26px;
-    --h2-size-lg: 23px;
-    --h2-size-md: 22px;
-    --h2-size-sm: 21px;
-    --h3-size-lg: 19px;
-    --h3-size-md: 18.5px;
-    --h3-size-sm: 18px;
-    --h4-size-lg: 17.5px;
-    --h4-size-md: 17.5px;
-    --h4-size-sm: 17.5px;
-    --h5-size-lg: 17px;
-    --h5-size-md: 17px;
-    --h5-size-sm: 17px;
-    --h6-size-lg: var(--size-lg);
-    --h6-size-md: var(--size-md);
-    --h6-size-sm: var(--size-sm);
-    --font-size: var(--size-sm);
+body {
+    --fish-size-lg: 16px;
+    --fish-size-md: 16px;
+    --fish-size-sm: 16px;
+    --fish-h1-size-lg: 30px;
+    --fish-h1-size-md: 28px;
+    --fish-h1-size-sm: 26px;
+    --fish-h2-size-lg: 23px;
+    --fish-h2-size-md: 22px;
+    --fish-h2-size-sm: 21px;
+    --fish-h3-size-lg: 19px;
+    --fish-h3-size-md: 18.5px;
+    --fish-h3-size-sm: 18px;
+    --fish-h4-size-lg: 17.5px;
+    --fish-h4-size-md: 17.5px;
+    --fish-h4-size-sm: 17.5px;
+    --fish-h5-size-lg: 17px;
+    --fish-h5-size-md: 17px;
+    --fish-h5-size-sm: 17px;
+    --fish-h6-size-lg: var(--fish-size-lg);
+    --fish-h6-size-md: var(--fish-size-md);
+    --fish-h6-size-sm: var(--fish-size-sm);
+    ---fish-font-size-: var(--fish-size-sm);
 
     @media screen and (min-width: 768px) {
-        --font-size: var(--size-md);
+        ---fish-font-size-: var(--fish-size-md);
     }
 
     @media screen and (min-width: 1200px) {
-        --font-size: var(--size-lg);
+        ---fish-font-size-: var(--fish-size-lg);
     }
 
     p,
     h6 {
-        --font-size: var(--size-sm);
+        ---fish-font-size-: var(--fish-size-sm);
 
         @media screen and (min-width: 768px) {
-            --font-size: var(--size-md);
+            ---fish-font-size-: var(--fish-size-md);
         }
 
         @media screen and (min-width: 1200px) {
-            --font-size: var(--size-lg);
+            ---fish-font-size-: var(--fish-size-lg);
         }
     }
 
     h1 {
-        --h1-size: var(--h1-size-sm);
+        --h1-size: var(--fish-h1-size-sm);
 
         @media screen and (min-width: 768px) {
-            --h1-size: var(--h1-size-md);
+            --h1-size: var(--fish-h1-size-md);
         }
 
         @media screen and (min-width: 1200px) {
-            --h1-size: var(--h1-size-lg);
+            --h1-size: var(--fish-h1-size-lg);
         }
     }
 
     h2 {
-        --h2-size: var(--h2-size-sm);
+        --h2-size: var(--fish-h2-size-sm);
 
         @media screen and (min-width: 768px) {
-            --h2-size: var(--h2-size-md);
+            --h2-size: var(--fish-h2-size-md);
         }
 
         @media screen and (min-width: 1200px) {
-            --h2-size: var(--h2-size-lg);
+            --h2-size: var(--fish-h2-size-lg);
         }
     }
 
     h3 {
-        --h3-size: var(--h3-size-sm);
+        --h3-size: var(--fish-h3-size-sm);
 
         @media screen and (min-width: 768px) {
-            --h3-size: var(--h3-size-md);
+            --h3-size: var(--fish-h3-size-md);
         }
 
         @media screen and (min-width: 1200px) {
-            --h3-size: var(--h3-size-lg);
+            --h3-size: var(--fish-h3-size-lg);
         }
     }
 
     h4 {
-        --h4-size: var(--h4-size-sm);
+        --h4-size: var(--fish-h4-size-sm);
 
         @media screen and (min-width: 768px) {
-            --h4-size: var(--h4-size-md);
+            --h4-size: var(--fish-h4-size-md);
         }
 
         @media screen and (min-width: 1200px) {
-            --h4-size: var(--h4-size-lg);
+            --h4-size: var(--fish-h4-size-lg);
         }
     }
 
     h5 {
-        --h5-size: var(--h5-size-sm);
+        --h5-size: var(--fish-h5-size-sm);
 
         @media screen and (min-width: 768px) {
-            --h5-size: var(--h5-size-md);
+            --h5-size: var(--fish-h5-size-md);
         }
 
         @media screen and (min-width: 1200px) {
-            --h5-size: var(--h5-size-lg);
+            --h5-size: var(--fish-h5-size-lg);
         }
     }
 }
@@ -117,7 +117,7 @@ h6 {
 
 p,
 h6 {
-    font-size: var(--font-size);
+    font-size: var(---fish-font-size-);
 }
 
 h1 {

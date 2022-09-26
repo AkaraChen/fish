@@ -3,4 +3,5 @@
 
 npm run build
 npm run lint
+npm run minify
 git add .
