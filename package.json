@@ -1,6 +1,6 @@
 {
     "name": "@akrc/fish",
-    "version": "0.2.13",
+    "version": "0.2.14",
     "description": "",
     "scripts": {
         "dev": "parcel example/index.html",
