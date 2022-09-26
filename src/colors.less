@@ -1,4 +1,4 @@
-body {
+:root {
     --fish-blue: #3498db;
     --fish-blue-deep: #2980b9;
     --fish-cyan: #1abc9c;
@@ -22,8 +22,8 @@ body {
     --fish-primary-deep: var(--fish-blue-deep);
 }
 
-.dark() {
-    body {
+@media (prefers-color-scheme: dark) {
+    :root {
         --fish-primary: var(--fish-primary-deep);
         --fish-cyan: var(--fish-cyan-deep);
         --fish-green: var(--fish-green-deep);
@@ -31,19 +31,6 @@ body {
         --fish-grey: var(--fish-grey-deep);
         --fish-light: var(--fish-light-deep);
     }
-}
-
-@media (prefers-color-scheme: dark) {
-    .dark();
-}
-
-body.dark {
-    --fish-primary: var(--fish-primary-deep);
-    --fish-cyan: var(--fish-cyan-deep);
-    --fish-green: var(--fish-green-deep);
-    --fish-red: var(--fish-red-deep);
-    --fish-grey: var(--fish-grey-deep);
-    --fish-light: var(--fish-light-deep);
 }
 
 * {

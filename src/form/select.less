@@ -25,17 +25,9 @@ label + select {
     margin-top: 0.25em;
 }
 
-.dark() {
+@media (prefers-color-scheme: dark) {
     select {
         background-color: var(--fish-dark);
         color: var(--fish-font-color);
     }
-}
-
-@media (prefers-color-scheme: dark) {
-    .dark();
-}
-
-body.dark {
-    .dark();
 }

@@ -22,7 +22,7 @@ pre code {
     overflow: auto;
 }
 
-.dark() {
+@media (prefers-color-scheme: dark) {
     code {
         background-color: var(--fish-dark);
     }
@@ -30,12 +30,4 @@ pre code {
         background-color: #050505;
         color: white;
     }
-}
-
-@media (prefers-color-scheme: dark) {
-    .dark();
-}
-
-body.dark {
-    .dark();
 }

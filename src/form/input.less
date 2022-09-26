@@ -15,7 +15,7 @@ input {
     }
 }
 
-.dark() {
+@media (prefers-color-scheme: dark) {
     input {
         background-color: var(--fish-dark);
         color: var(--fish-font-color);
@@ -29,12 +29,4 @@ input {
             border-color: none;
         }
     }
-}
-
-@media (prefers-color-scheme: dark) {
-    .dark();
-}
-
-body.dark {
-    .dark();
 }

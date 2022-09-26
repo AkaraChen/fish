@@ -18,7 +18,7 @@ button {
     }
 }
 
-.dark() {
+@media (prefers-color-scheme: dark) {
     .btn,
     button {
         background-color: var(--fish-dark);
@@ -27,14 +27,6 @@ button {
             background-color: var(--fish-grey);
         }
     }
-}
-
-@media (prefers-color-scheme: dark) {
-    .dark();
-}
-
-body.dark {
-    .dark();
 }
 
 button [disabled] {

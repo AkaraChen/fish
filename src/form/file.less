@@ -23,16 +23,8 @@ input[type='file'] {
     }
 }
 
-.dark() {
+@media (prefers-color-scheme: dark) {
     input[type='file']::-webkit-file-upload-button {
         background-color: var(--fish-dark);
     }
-}
-
-body.dark {
-    .dark();
-}
-
-@media (prefers-color-scheme: dark) {
-    .dark();
 }

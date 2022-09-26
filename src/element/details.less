@@ -5,16 +5,8 @@ details {
     border-radius: var(--fish-radius);
 }
 
-.dark() {
+@media (prefers-color-scheme: dark) {
     details {
         background-color: var(--fish-dark);
     }
-}
-
-@media (prefers-color-scheme: dark) {
-    .dark();
-}
-
-body.dark {
-    .dark();
 }
