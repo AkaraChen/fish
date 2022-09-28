@@ -1,14 +1,19 @@
 :root {
+    --fish-blue-light: rgba(52, 152, 219, 0.1);
     --fish-blue: #3498db;
     --fish-blue-deep: #2980b9;
+    --fish-cyan-light: rgba(26, 188, 156, 0.1);
     --fish-cyan: #1abc9c;
     --fish-cyan-deep: #16a085;
+    --fish-green-light: rgba(46, 204, 113, 0.1);
     --fish-green: #2ecc71;
     --fish-green-deep: #27ae60;
     --fish-dark: #303133;
     --fish-dark-deep: #1d1d1d;
+    --fish-red-light: rgba(231, 76, 60, 0.1);
     --fish-red: #e74c3c;
     --fish-red-deep: #c0392b;
+    --fish-yellow-light: rgba(241, 196, 15, 0.1);
     --fish-yellow: #f1c40f;
     --fish-yellow-deep: #e67e22;
     --fish-light: #e6e8eb;
@@ -20,6 +25,7 @@
     --fish-white: #f5f6fa;
     --fish-black: #050505;
     --fish-code-color: #f47466;
+    --fish-primary-light: var(--fish-blue-light);
     --fish-primary: var(--fish-blue);
     --fish-primary-deep: var(--fish-blue-deep);
 }
@@ -38,25 +44,30 @@
 
 * {
     &.blue {
+        --fish-primary-light: var(--fish-blue-light);
         --fish-primary: var(--fish-blue);
         --fish-primary-deep: var(--fish-blue-deep);
     }
     &.cyan {
+        --fish-primary-light: var(--fish-cyan-light);
         --fish-primary: var(--fish-cyan);
         --fish-primary-deep: var(--fish-cyan-deep);
     }
     &.green,
     .success {
+        --fish-primary-light: var(--fish-green-light);
         --fish-primary: var(--fish-green);
         --fish-primary-deep: var(--fish-green-deep);
     }
     &.red,
     .error {
+        --fish-primary-light: var(--fish-red-light);
         --fish-primary: var(--fish-red);
         --fish-primary-deep: var(--fish-red-deep);
     }
     &.yellow,
     .warn {
+        --fish-primary-light: var(--fish-yellow-light);
         --fish-primary: var(--fish-yellow);
         --fish-primary-deep: var(--fish-yellow-deep);
     }
