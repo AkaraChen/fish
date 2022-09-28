@@ -9,6 +9,8 @@
     --fish-dark-deep: #1d1d1d;
     --fish-red: #e74c3c;
     --fish-red-deep: #c0392b;
+    --fish-yellow: #f1c40f;
+    --fish-yellow-deep: #e67e22;
     --fish-light: #e6e8eb;
     --fish-light-deep: #1d1e1f;
     --fish-grey: #95a5a6;
@@ -27,6 +29,7 @@
         --fish-primary: var(--fish-primary-deep);
         --fish-cyan: var(--fish-cyan-deep);
         --fish-green: var(--fish-green-deep);
+        --fish-yellow: var(--fish-yellow-deep);
         --fish-red: var(--fish-red-deep);
         --fish-grey: var(--fish-grey-deep);
         --fish-light: var(--fish-light-deep);
@@ -42,12 +45,19 @@
         --fish-primary: var(--fish-cyan);
         --fish-primary-deep: var(--fish-cyan-deep);
     }
-    &.green {
+    &.green,
+    .success {
         --fish-primary: var(--fish-green);
         --fish-primary-deep: var(--fish-green-deep);
     }
-    &.red {
+    &.red,
+    .error {
         --fish-primary: var(--fish-red);
         --fish-primary-deep: var(--fish-red-deep);
+    }
+    &.yellow,
+    .warn {
+        --fish-primary: var(--fish-yellow);
+        --fish-primary-deep: var(--fish-yellow-deep);
     }
 }
