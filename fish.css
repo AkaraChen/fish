@@ -630,7 +630,7 @@ pre {
 code {
     display: inline-block;
     padding: 0.125em 0.5em;
-    background-color: white;
+    background-color: #f7f2f4;
     font-size: var(---fish-font-size-);
     color: var(--fish-code-color);
 }
@@ -709,11 +709,6 @@ details {
     details {
         background-color: var(--fish-dark);
     }
-}
-footer {
-    margin: 0.25em;
-    padding: 0.25em;
-    text-align: center;
 }
 body *::-webkit-scrollbar {
     width: 6px;

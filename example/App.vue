@@ -17,7 +17,9 @@
         </main>
 
         <footer>
-            <p>2022-PRESENT © Akara Chen</p>
+            <p style="text-align: center; opacity: 0.6">
+                2022-PRESENT © Akara Chen
+            </p>
         </footer>
     </div>
 </template>
