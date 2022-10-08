@@ -1,46 +1,43 @@
 table {
-    border-collapse: collapse;
-    background-color: white;
+    border-spacing: 0;
+    overflow: auto;
+    border: 1.5px solid #dfe2e5;
 }
 
-table thead {
-    background-color: rgb(245 245 245 / 70%);
-    border: none;
-    color: white;
+td,
+th {
+    padding: 0;
 }
 
-table tbody {
-    border: none;
-}
-
-table tr:nth-child(even) {
-    background-color: rgb(245 245 245 / 70%);
-    border: none;
+table th {
+    font-weight: 600;
+    background: #fff;
+    text-align: left;
 }
 
 table td,
 table th {
-    padding: 8px;
-    border: none;
+    padding: 12px;
 }
 
-table th {
-    text-align: start;
-    text-align: center;
-    font-weight: normal;
+table tr {
+    background-color: #fff;
+}
+
+table tr:nth-child(2n + 1) {
+    background-color: #f6f8fa;
 }
 
 @media (prefers-color-scheme: dark) {
     table {
+        border: 1.5px solid #282a2b;
+        th,
+        tr {
+            background-color: #1b1b1b;
+        }
+    }
+
+    table tr:nth-child(2n + 1) {
         background-color: var(--fish-dark);
-        border: none;
-    }
-
-    table tr:nth-child(even) {
-        background-color: var(--fish-dark-deep);
-    }
-
-    table thead {
-        background-color: var(--fish-dark-deep);
     }
 }

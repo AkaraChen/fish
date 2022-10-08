@@ -1,13 +1,13 @@
 .btn,
-button {
+button,
+input[type='file']::-webkit-file-upload-button {
     background-color: var(--fish-light);
     border: none;
     color: var(--fish-primary);
     border-radius: var(--fish-radius);
-    font-size: 16px;
+    font-size: var(--fish-font-size);
     display: inline-flex;
-    padding-inline-start: 16px;
-    padding-inline-end: 16px;
+    padding: 0 16px;
     height: 40px;
     align-items: center;
     transition: 0.5s background-color;
@@ -20,7 +20,8 @@ button {
 
 @media (prefers-color-scheme: dark) {
     .btn,
-    button {
+    button,
+    input[type='file']::-webkit-file-upload-button {
         background-color: var(--fish-dark);
 
         &:hover {
@@ -31,12 +32,4 @@ button {
 
 button [disabled] {
     opacity: 0.8;
-}
-
-.btn + .btn,
-.btn + button,
-button + .btn,
-button + button {
-    margin-left: 5px;
-    margin-top: 5px;
 }

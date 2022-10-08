@@ -4,7 +4,7 @@ Build more pages with less CSS code.
 
 ## Introduction
 
-Fish.css is a CSS library focused on improving the default appearance of HTML, which can be used on any html-based document. It allows you to quickly give your website a modern look without having to start from scratch.
+Fish.css is a CSS library focused on improving the default appearance of HTML, which can be used on any html-based document.
 
 ### Installation
 

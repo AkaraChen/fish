@@ -1,158 +1,32 @@
 :root {
-    --fish-size-lg: 16px;
-    --fish-size-md: 16px;
-    --fish-size-sm: 16px;
-    --fish-h1-size-lg: 30px;
-    --fish-h1-size-md: 28px;
-    --fish-h1-size-sm: 26px;
-    --fish-h2-size-lg: 23px;
-    --fish-h2-size-md: 22px;
-    --fish-h2-size-sm: 21px;
-    --fish-h3-size-lg: 19px;
-    --fish-h3-size-md: 18.5px;
-    --fish-h3-size-sm: 18px;
-    --fish-h4-size-lg: 17.5px;
-    --fish-h4-size-md: 17.5px;
-    --fish-h4-size-sm: 17.5px;
-    --fish-h5-size-lg: 17px;
-    --fish-h5-size-md: 17px;
-    --fish-h5-size-sm: 17px;
-    --fish-h6-size-lg: var(--fish-size-lg);
-    --fish-h6-size-md: var(--fish-size-md);
-    --fish-h6-size-sm: var(--fish-size-sm);
-    ---fish-font-size-: var(--fish-size-sm);
-}
-@media screen and (min-width: 768px) {
-    :root {
-        ---fish-font-size-: var(--fish-size-md);
-    }
-}
-@media screen and (min-width: 1200px) {
-    :root {
-        ---fish-font-size-: var(--fish-size-lg);
-    }
-}
-:root p,
-:root h6 {
-    ---fish-font-size-: var(--fish-size-sm);
-}
-@media screen and (min-width: 768px) {
-    :root p,
-    :root h6 {
-        ---fish-font-size-: var(--fish-size-md);
-    }
-}
-@media screen and (min-width: 1200px) {
-    :root p,
-    :root h6 {
-        ---fish-font-size-: var(--fish-size-lg);
-    }
-}
-:root h1 {
-    --h1-size: var(--fish-h1-size-sm);
-}
-@media screen and (min-width: 768px) {
-    :root h1 {
-        --h1-size: var(--fish-h1-size-md);
-    }
-}
-@media screen and (min-width: 1200px) {
-    :root h1 {
-        --h1-size: var(--fish-h1-size-lg);
-    }
-}
-:root h2 {
-    --h2-size: var(--fish-h2-size-sm);
-}
-@media screen and (min-width: 768px) {
-    :root h2 {
-        --h2-size: var(--fish-h2-size-md);
-    }
-}
-@media screen and (min-width: 1200px) {
-    :root h2 {
-        --h2-size: var(--fish-h2-size-lg);
-    }
-}
-:root h3 {
-    --h3-size: var(--fish-h3-size-sm);
-}
-@media screen and (min-width: 768px) {
-    :root h3 {
-        --h3-size: var(--fish-h3-size-md);
-    }
-}
-@media screen and (min-width: 1200px) {
-    :root h3 {
-        --h3-size: var(--fish-h3-size-lg);
-    }
-}
-:root h4 {
-    --h4-size: var(--fish-h4-size-sm);
-}
-@media screen and (min-width: 768px) {
-    :root h4 {
-        --h4-size: var(--fish-h4-size-md);
-    }
-}
-@media screen and (min-width: 1200px) {
-    :root h4 {
-        --h4-size: var(--fish-h4-size-lg);
-    }
-}
-:root h5 {
-    --h5-size: var(--fish-h5-size-sm);
-}
-@media screen and (min-width: 768px) {
-    :root h5 {
-        --h5-size: var(--fish-h5-size-md);
-    }
-}
-@media screen and (min-width: 1200px) {
-    :root h5 {
-        --h5-size: var(--fish-h5-size-lg);
-    }
-}
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0.875em 0;
-    line-height: 1.4em;
-}
-p,
-h6 {
-    font-size: var(---fish-font-size-);
+    --fish-font-size: 16px;
 }
 h1 {
-    font-size: var(--h1-size);
+    font-size: 2.5rem;
 }
 h2 {
-    font-size: var(--h2-size);
+    font-size: 1.6rem;
 }
 h3 {
-    font-size: var(--h3-size);
+    font-size: 1.35rem;
 }
 h4 {
-    font-size: var(--h4-size);
+    font-size: 1.15rem;
 }
 h5 {
-    font-size: var(--h5-size);
+    font-size: 1.05rem;
 }
-p {
-    word-spacing: 1px;
+h6 {
+    font-size: 1rem;
 }
 :root {
     --fish-base-font: pingfang sc, helvetica neue, microsoft yahei,
         hiragino sans gb, microsoft sans serif, wenquanyi micro hei, sans-serif;
-    --fish-code-font: Fira Code, Jetbrains Mono, consolas, monospace;
+    --fish-code-font: Jetbrains Mono, Fira Code, consolas, monospace;
 }
 :root {
     box-sizing: border-box;
-    font-size: var(---fish-font-size-);
+    font-size: var(--fish-font-size);
     font-family: var(--fish-base-font);
     letter-spacing: 0.125px;
     --font-color: black;
@@ -477,7 +351,7 @@ template {
     display: none;
 }
 :root {
-    --fish-radius: 4px;
+    --fish-radius: 6px;
 }
 :root {
     --fish-blue-light: rgba(52, 152, 219, 0.1);
@@ -497,7 +371,7 @@ template {
     --fish-yellow-light: rgba(241, 196, 15, 0.1);
     --fish-yellow: #f1c40f;
     --fish-yellow-deep: #e67e22;
-    --fish-light: #e6e8eb;
+    --fish-light: #f2f2f2;
     --fish-light-deep: #1d1e1f;
     --fish-grey: #95a5a6;
     --fish-grey-deep: #39393a;
@@ -550,77 +424,47 @@ template {
     --fish-primary-deep: var(--fish-yellow-deep);
 }
 .btn,
-button {
+button,
+input[type='file']::-webkit-file-upload-button {
     background-color: var(--fish-light);
     border: none;
     color: var(--fish-primary);
     border-radius: var(--fish-radius);
-    font-size: 16px;
+    font-size: var(--fish-font-size);
     display: inline-flex;
-    padding-inline-start: 16px;
-    padding-inline-end: 16px;
+    padding: 0 16px;
     height: 40px;
     align-items: center;
     transition: 0.5s background-color;
     margin: 0;
 }
 .btn:hover,
-button:hover {
+button:hover,
+input[type='file']::-webkit-file-upload-button:hover {
     background-color: var(--fish-light);
 }
 @media (prefers-color-scheme: dark) {
     .btn,
-    button {
+    button,
+    input[type='file']::-webkit-file-upload-button {
         background-color: var(--fish-dark);
     }
     .btn:hover,
-    button:hover {
+    button:hover,
+    input[type='file']::-webkit-file-upload-button:hover {
         background-color: var(--fish-grey);
     }
 }
 button [disabled] {
     opacity: 0.8;
 }
-.btn + .btn,
-.btn + button,
-button + .btn,
-button + button {
-    margin-left: 5px;
-    margin-top: 5px;
-}
 blockquote {
-    font-size: var(---fish-font-size-);
-    border-left: 5px solid var(--fish-grey);
+    font-size: var(--fish-font-size);
+    border-left: 4px solid var(--fish-grey);
     padding: 0.25em 1em;
     opacity: 0.8;
     margin: 0.5em;
-}
-hgroup *::after {
-    display: none;
-}
-hgroup * h1,
-hgroup * h2,
-hgroup * h3,
-hgroup * h4,
-hgroup * h5,
-hgroup * h6 {
-    margin-bottom: 0;
-    color: var(--font-color);
-}
-hgroup > *:first-child {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-hgroup > *:first-child::before {
-    display: none;
-}
-hgroup > *:last-child {
-    opacity: 0.5;
-    margin-top: 0.4em;
-    font-size: var(--h3-size);
-}
-hgroup > *:last-child::before {
-    display: none;
+    line-height: 1.5;
 }
 code,
 pre {
@@ -631,25 +475,22 @@ code {
     display: inline-block;
     padding: 0.125em 0.5em;
     background-color: #f7f2f4;
-    font-size: var(---fish-font-size-);
+    font-size: var(--fish-font-size);
     color: var(--fish-code-color);
 }
 pre code {
-    background-color: #050505;
-    color: white;
     margin: 0;
     padding: 0.75em;
     font-size: 1em;
     width: 100%;
     overflow: auto;
+    background-color: #f6f8fa;
+    color: #24292e;
 }
 @media (prefers-color-scheme: dark) {
-    code {
-        background-color: var(--fish-dark);
-    }
     pre code {
-        background-color: #050505;
-        color: white;
+        background-color: #242529;
+        color: unset;
     }
 }
 kbd {
@@ -658,46 +499,8 @@ kbd {
     color: white;
     padding: 0.25em 0.5em;
     border-radius: var(--fish-radius);
-    font-size: var(---fish-font-size-);
+    font-size: var(--fish-font-size);
     font-family: var(--fish-code-font);
-}
-table {
-    border-collapse: collapse;
-    background-color: white;
-}
-table thead {
-    background-color: rgba(245, 245, 245, 0.7);
-    border: none;
-    color: white;
-}
-table tbody {
-    border: none;
-}
-table tr:nth-child(even) {
-    background-color: rgba(245, 245, 245, 0.7);
-    border: none;
-}
-table td,
-table th {
-    padding: 8px;
-    border: none;
-}
-table th {
-    text-align: start;
-    text-align: center;
-    font-weight: normal;
-}
-@media (prefers-color-scheme: dark) {
-    table {
-        background-color: var(--fish-dark);
-        border: none;
-    }
-    table tr:nth-child(even) {
-        background-color: var(--fish-dark-deep);
-    }
-    table thead {
-        background-color: var(--fish-dark-deep);
-    }
 }
 details {
     margin: 0.5em 0;
@@ -727,6 +530,62 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
+hgroup h1,
+hgroup h2,
+hgroup h3,
+hgroup h4,
+hgroup h5,
+hgroup h6 {
+    margin-bottom: 0;
+    color: var(--font-color);
+}
+hgroup > :last-child {
+    margin-top: 4px;
+    opacity: 0.75;
+}
+del {
+    color: var(--fish-red);
+}
+ins {
+    color: var(--fish-green);
+    text-decoration: none;
+}
+table {
+    border-spacing: 0;
+    overflow: auto;
+    border: 1.5px solid #dfe2e5;
+}
+td,
+th {
+    padding: 0;
+}
+table th {
+    font-weight: 600;
+    background: #fff;
+    text-align: left;
+}
+table td,
+table th {
+    padding: 12px;
+}
+table tr {
+    background-color: #fff;
+}
+table tr:nth-child(2n + 1) {
+    background-color: #f6f8fa;
+}
+@media (prefers-color-scheme: dark) {
+    table {
+        border: 1.5px solid #282a2b;
+    }
+    table th,
+    table tr {
+        background-color: #1b1b1b;
+    }
+    table tr:nth-child(2n + 1) {
+        background-color: var(--fish-dark);
+    }
+}
 h1,
 h2,
 h3,
@@ -734,6 +593,11 @@ h4,
 h5,
 h6 {
     margin: 0.75em 0;
+    line-height: 1.5;
+    color: var(--fish-font-color);
+}
+p {
+    margin: 12px 0;
     line-height: 1.5;
 }
 h1,
@@ -755,7 +619,7 @@ a {
     text-decoration: none;
     background-color: inherit;
     padding: 0;
-    font-size: var(---fish-font-size-);
+    font-size: var(--fish-font-size);
 }
 a.button {
     color: var(--fish-primary);
@@ -774,8 +638,10 @@ a.button:hover {
 }
 ul,
 ol {
-    margin: 1em;
-    font-size: var(---fish-font-size-);
+    margin: 1em 0;
+    padding-left: 1.25em;
+    font-size: var(--fish-font-size);
+    line-height: 1.5;
 }
 li {
     margin-top: 10px;
@@ -791,65 +657,60 @@ fieldset {
     margin-bottom: 0.75em;
 }
 legend {
-    font-size: var(---fish-font-size-);
+    font-size: var(--fish-font-size);
     margin-bottom: 0.25em;
 }
 fieldset > * {
     vertical-align: middle;
 }
-input {
+input,
+select {
     outline: none;
     width: 100%;
-    height: 2.1em;
+    height: 2.25em;
     margin: 0.75em 0;
     padding: 0.5em;
-    border: rgba(0, 0, 0, 0.3) 1.4px solid;
+    border: var(--fish-grey) 1.5px solid;
     border-radius: var(--fish-radius);
-    font-size: 16px;
-    display: block;
-    transition: 0.25s border;
+    font-size: var(--fish-font-size);
+    transition: 0.125s border;
 }
-input:focus {
+input:focus,
+select:focus {
     border-color: var(--fish-primary);
+    border-width: 2px;
+}
+input:focus::placeholder,
+select:focus::placeholder {
+    color: transparent;
 }
 @media (prefers-color-scheme: dark) {
-    input {
+    input,
+    select {
         background-color: var(--fish-dark);
         color: var(--fish-font-color);
         border-color: transparent;
     }
-    input::placeholder {
+    input::placeholder,
+    select::placeholder {
         color: var(--fish-font-color);
     }
-    input:focus-visible {
+    input:focus-visible,
+    select:focus-visible {
         border-color: none;
     }
 }
 label {
-    font-size: calc(var(---fish-font-size-) - 1px);
+    font-size: calc(var(--fish-font-size) - 0.5px);
     display: inline-block;
-    opacity: 0.9;
 }
 label + input {
     margin-top: 0.5em;
 }
 select {
-    outline: none;
-    display: block;
-    width: 100%;
-    padding: 0.25em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    height: 2.1em;
-    margin: 0.75em 0;
-    border: rgba(0, 0, 0, 0.3) 1.4px solid;
-    border-radius: var(--fish-radius);
+    padding: 0.25em 0.5em;
     caret-color: gray;
-    font-size: 16px;
-    appearance: none;
-    background-color: transparent;
-    color: var(--font-color);
-    transition: 0.25s border;
+    font-size: var(--fish-font-size);
 }
 select:focus {
     border-color: var(--fish-primary);
@@ -925,24 +786,7 @@ input[type='file'] {
     background-color: transparent !important;
 }
 input[type='file']::-webkit-file-upload-button {
-    background-color: var(--fish-light);
-    border: none;
-    color: var(--fish-primary);
-    border-radius: var(--fish-radius);
-    font-size: 16px;
-    display: inline-flex;
-    padding-inline-start: 16px;
-    padding-inline-end: 16px;
-    height: 30px;
-    align-items: center;
-    transition: 0.5s background-color;
-    margin: 0;
-    margin-right: 10px;
-}
-@media (prefers-color-scheme: dark) {
-    input[type='file']::-webkit-file-upload-button {
-        background-color: var(--fish-dark);
-    }
+    margin-right: 8px;
 }
 input[type='datetime-local'],
 input[type='date'] {

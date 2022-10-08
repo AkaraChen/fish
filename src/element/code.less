@@ -8,26 +8,23 @@ code {
     display: inline-block;
     padding: 0.125em 0.5em;
     background-color: #f7f2f4;
-    font-size: var(---fish-font-size-);
+    font-size: var(--fish-font-size);
     color: var(--fish-code-color);
 }
 
 pre code {
-    background-color: #050505;
-    color: white;
     margin: 0;
     padding: 0.75em;
     font-size: 1em;
     width: 100%;
     overflow: auto;
+    background-color: #f6f8fa;
+    color: #24292e;
 }
 
 @media (prefers-color-scheme: dark) {
-    code {
-        background-color: var(--fish-dark);
-    }
     pre code {
-        background-color: #050505;
-        color: white;
+        background-color: rgb(36, 37, 41);
+        color: unset;
     }
 }

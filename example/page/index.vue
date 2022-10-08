@@ -2,9 +2,7 @@
     <h2>Introduction</h2>
     <p>
         Fish.css is a CSS library focused on improving the default appearance of
-        HTML, which can be used on any html-based document. It allows you to
-        quickly give your website a modern look without having to start from
-        scratch.
+        HTML, which can be used on any html-based document.
     </p>
 
     <h2>Usage</h2>
@@ -22,7 +20,18 @@
     </p>
 
     <h2>Examples</h2>
-    <router-link class="btn" to="/text">Text</router-link>
-    <router-link class="btn" to="/form">Form</router-link>
-    <router-link class="btn" to="/other">Others</router-link>
+    <div class="btn-group">
+        <router-link class="btn" to="/text">Text</router-link>
+        <router-link class="btn" to="/form">Form</router-link>
+        <router-link class="btn" to="/other">Others</router-link>
+    </div>
 </template>
+
+<style lang="less">
+.btn-group {
+    * + * {
+        margin-left: 6px;
+        margin-top: 6px;
+    }
+}
+</style>
