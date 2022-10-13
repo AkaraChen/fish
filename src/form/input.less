@@ -5,13 +5,13 @@ select {
     height: 2.25em;
     margin: 0.75em 0;
     padding: 0.5em;
-    border: var(--fish-grey) 1.5px solid;
+    border-style: solid;
+    border-color: var(--fish-grey);
+    border-width: 1.5px;
     border-radius: var(--fish-radius);
     font-size: var(--fish-font-size);
-    transition: 0.125s border;
     &:focus {
         border-color: var(--fish-primary);
-        border-width: 2px;
         &::placeholder {
             color: transparent;
         }
