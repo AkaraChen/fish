@@ -21,17 +21,15 @@
 
     <h2>Examples</h2>
     <div class="btn-group">
-        <router-link class="btn" to="/text">Text</router-link>
+        <router-link class="btn" to="/text">Typography</router-link>
         <router-link class="btn" to="/form">Form</router-link>
         <router-link class="btn" to="/other">Others</router-link>
     </div>
 </template>
 
-<style lang="less">
-.btn-group {
-    * + * {
-        margin-left: 6px;
-        margin-top: 6px;
-    }
+<style>
+.btn-group * + * {
+    margin-left: 6px;
+    margin-top: 6px;
 }
 </style>

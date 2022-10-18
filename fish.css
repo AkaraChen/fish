@@ -383,6 +383,7 @@ template {
     --fish-primary-light: var(--fish-blue-light);
     --fish-primary: var(--fish-blue);
     --fish-primary-deep: var(--fish-blue-deep);
+    --fish-input-color: #ababab;
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -426,9 +427,9 @@ template {
 .btn,
 button,
 input[type='file']::-webkit-file-upload-button {
-    background-color: #edf2f7;
+    background-color: var(--fish-primary);
+    color: white;
     border: none;
-    color: var(--fish-primary);
     border-radius: var(--fish-radius);
     font-size: var(--fish-font-size);
     display: inline-flex;
@@ -441,7 +442,7 @@ input[type='file']::-webkit-file-upload-button {
 .btn:hover,
 button:hover,
 input[type='file']::-webkit-file-upload-button:hover {
-    background-color: var(--fish-light);
+    background-color: var(--fish-primary-deep);
 }
 @media (prefers-color-scheme: dark) {
     .btn,
@@ -671,10 +672,11 @@ select {
     margin: 0.75em 0;
     padding: 0.5em;
     border-style: solid;
-    border-color: var(--fish-grey);
+    border-color: var(--fish-input-color);
     border-width: 1.5px;
     border-radius: var(--fish-radius);
     font-size: var(--fish-font-size);
+    background-color: transparent;
 }
 input:focus,
 select:focus {
@@ -709,7 +711,6 @@ label + input {
 }
 select {
     padding: 0.25em 0.5em;
-    caret-color: gray;
     font-size: var(--fish-font-size);
 }
 select:focus {
@@ -725,7 +726,6 @@ label + select {
     }
 }
 input[type='radio'] {
-    display: inline;
     border: none;
     width: 1em;
     height: 1em;
@@ -743,39 +743,37 @@ input[type='radio']::before {
     width: 1em;
     height: 1em;
     border-radius: 50%;
-    border: solid 0.1em var(--fish-light-deep);
+    border: solid 0.1em var(--fish-input-color);
 }
 input[type='radio']:checked::before {
     border: solid 0.25em var(--fish-primary);
     background-color: white;
 }
 input[type='checkbox'] {
-    display: inline;
-    border: none;
     width: 1em;
     height: 1em;
-    margin: 0.5em 0;
-    border-radius: var(--fish-radius);
     padding: 0;
+    margin: 0.75em 0;
+    border-radius: calc(var(--fish-radius) / 2);
 }
 input[type='checkbox'] + label {
-    display: inline;
     margin: 0;
-    margin-left: 0.5em;
+    margin-left: 0.33em;
 }
 input[type='checkbox']::before {
+    position: relative;
     content: '';
-    display: inline-block;
+    display: block;
     width: 1em;
     height: 1em;
-    border-radius: var(--fish-radius);
 }
 input[type='checkbox']:checked::before {
+    border-radius: calc(var(--fish-radius) / 2);
     background-color: var(--fish-primary);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
 }
 input[type='checkbox'] + label + input[type='checkbox'] {
-    margin-left: 6px;
+    margin-left: 12px;
 }
 input[type='file'] {
     padding-left: 0;
