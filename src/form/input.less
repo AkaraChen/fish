@@ -11,8 +11,10 @@ select {
     border-radius: var(--fish-radius);
     font-size: var(--fish-font-size);
     background-color: transparent;
+    transition: box-shadow 0.125s;
     &:focus {
         border-color: var(--fish-primary);
+
         &::placeholder {
             color: transparent;
         }

@@ -29,8 +29,8 @@ h6 {
     font-size: var(--fish-font-size);
     font-family: var(--fish-base-font);
     letter-spacing: 0.125px;
-    --font-color: black;
-    color: var(--font-color);
+    --fish-font-color: black;
+    color: var(--fish-font-color);
 }
 *,
 *::before,
@@ -42,7 +42,7 @@ h6 {
 @media (prefers-color-scheme: dark) {
     :root {
         background-color: #1b1b1b;
-        --font-color: #bbbbbb;
+        --fish-font-color: #bbbbbb;
     }
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -383,7 +383,8 @@ template {
     --fish-primary-light: var(--fish-blue-light);
     --fish-primary: var(--fish-blue);
     --fish-primary-deep: var(--fish-blue-deep);
-    --fish-input-color: #ababab;
+    --fish-input-color: #ced4da;
+    --fish-secondary-text: #909399;
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -394,6 +395,7 @@ template {
         --fish-red: var(--fish-red-deep);
         --fish-grey: var(--fish-grey-deep);
         --fish-light: var(--fish-light-deep);
+        --fish-secondary-text: #a3a6ad;
     }
 }
 *.blue {
@@ -427,28 +429,26 @@ template {
 .btn,
 button,
 input[type='file']::-webkit-file-upload-button {
-    background-color: var(--fish-primary);
-    color: white;
+    background-color: #f2f2f2;
     border: none;
     border-radius: var(--fish-radius);
     font-size: var(--fish-font-size);
-    display: inline-flex;
-    padding: 0 16px;
-    height: 40px;
-    align-items: center;
+    padding: 10px 16px;
     transition: 0.5s background-color;
     margin: 0;
+    color: black;
 }
 .btn:hover,
 button:hover,
 input[type='file']::-webkit-file-upload-button:hover {
-    background-color: var(--fish-primary-deep);
+    background-color: #ddd;
 }
 @media (prefers-color-scheme: dark) {
     .btn,
     button,
     input[type='file']::-webkit-file-upload-button {
         background-color: var(--fish-dark);
+        color: var(--fish-white);
     }
     .btn:hover,
     button:hover,
@@ -456,14 +456,10 @@ input[type='file']::-webkit-file-upload-button:hover {
         background-color: var(--fish-grey);
     }
 }
-button [disabled] {
-    opacity: 0.8;
-}
 blockquote {
     font-size: var(--fish-font-size);
     border-left: 4px solid var(--fish-grey);
     padding: 0.25em 1em;
-    opacity: 0.8;
     margin: 0.5em;
     line-height: 1.5;
 }
@@ -473,13 +469,13 @@ pre {
     font-family: var(--fish-code-font);
 }
 code {
-    display: inline-block;
     padding: 0.125em 0.5em;
     background-color: #f7f2f4;
     font-size: var(--fish-font-size);
     color: var(--fish-code-color);
 }
 pre code {
+    display: block;
     margin: 0;
     padding: 0.75em;
     font-size: 1em;
@@ -497,7 +493,7 @@ pre code {
 kbd {
     display: inline-block;
     background-color: #050505;
-    color: white;
+    color: var(--fish-white);
     padding: 0.25em 0.5em;
     border-radius: var(--fish-radius);
     font-size: var(--fish-font-size);
@@ -538,11 +534,11 @@ hgroup h4,
 hgroup h5,
 hgroup h6 {
     margin-bottom: 0;
-    color: var(--font-color);
+    color: var(--fish-font-color);
 }
 hgroup > :last-child {
     margin-top: 4px;
-    opacity: 0.75;
+    color: var(--fish-secondary-text);
 }
 del {
     color: var(--fish-red);
@@ -610,7 +606,6 @@ h6 {
     font-weight: normal;
 }
 mark {
-    display: inline-block;
     background-color: var(--fish-mark);
     color: var(--fish-mark-text);
     padding: 2px;
@@ -630,9 +625,6 @@ a.button {
     padding: 0.5em;
     border-radius: var(--fish-radius);
     transition: background-color 0.25s;
-}
-a.button::after {
-    display: none;
 }
 a.button:hover {
     background-color: var(--fish-light-deep);
@@ -677,6 +669,7 @@ select {
     border-radius: var(--fish-radius);
     font-size: var(--fish-font-size);
     background-color: transparent;
+    transition: box-shadow 0.125s;
 }
 input:focus,
 select:focus {
@@ -704,7 +697,6 @@ select:focus::placeholder {
 }
 label {
     font-size: calc(var(--fish-font-size) - 0.5px);
-    display: inline-block;
 }
 label + input {
     margin-top: 0.5em;
@@ -730,6 +722,7 @@ input[type='radio'] {
     width: 1em;
     height: 1em;
     margin: 0.75em 0;
+    box-shadow: none;
 }
 input[type='radio'] + label {
     display: inline;
@@ -755,13 +748,14 @@ input[type='checkbox'] {
     padding: 0;
     margin: 0.75em 0;
     border-radius: calc(var(--fish-radius) / 2);
+    box-shadow: none;
+    border-width: 0;
 }
 input[type='checkbox'] + label {
     margin: 0;
     margin-left: 0.33em;
 }
 input[type='checkbox']::before {
-    position: relative;
     content: '';
     display: block;
     width: 1em;
@@ -782,6 +776,7 @@ input[type='file'] {
     border: none;
     height: fit-content;
     background-color: transparent !important;
+    box-shadow: none;
 }
 input[type='file']::-webkit-file-upload-button {
     margin-right: 8px;
@@ -789,7 +784,7 @@ input[type='file']::-webkit-file-upload-button {
 input[type='datetime-local'],
 input[type='date'] {
     appearance: none;
-    color: var(--font-color);
+    color: var(--fish-font-color);
     background-color: transparent;
 }
 @media (prefers-color-scheme: dark) {

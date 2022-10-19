@@ -1,20 +1,17 @@
 .btn,
 button,
 input[type='file']::-webkit-file-upload-button {
-    background-color: var(--fish-primary);
-    color: white;
+    background-color: #f2f2f2;
     border: none;
     border-radius: var(--fish-radius);
     font-size: var(--fish-font-size);
-    display: inline-flex;
-    padding: 0 16px;
-    height: 40px;
-    align-items: center;
+    padding: 10px 16px;
     transition: 0.5s background-color;
     margin: 0;
+    color: black;
 
     &:hover {
-        background-color: var(--fish-primary-deep);
+        background-color: #ddd;
     }
 }
 
@@ -23,13 +20,10 @@ input[type='file']::-webkit-file-upload-button {
     button,
     input[type='file']::-webkit-file-upload-button {
         background-color: var(--fish-dark);
+        color: var(--fish-white);
 
         &:hover {
             background-color: var(--fish-grey);
         }
     }
-}
-
-button [disabled] {
-    opacity: 0.8;
 }

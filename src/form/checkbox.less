@@ -4,6 +4,8 @@ input[type='checkbox'] {
     padding: 0;
     margin: 0.75em 0;
     border-radius: calc(var(--fish-radius) / 2);
+    box-shadow: none;
+    border-width: 0;
 }
 
 input[type='checkbox'] + label {
@@ -12,7 +14,6 @@ input[type='checkbox'] + label {
 }
 
 input[type='checkbox']::before {
-    position: relative;
     content: '';
     display: block;
     width: 1em;
