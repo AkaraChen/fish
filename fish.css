@@ -383,7 +383,7 @@ template {
     --fish-primary-light: var(--fish-blue-light);
     --fish-primary: var(--fish-blue);
     --fish-primary-deep: var(--fish-blue-deep);
-    --fish-input-color: #ced4da;
+    --fish-input-color: #0000004d;
     --fish-secondary-text: #909399;
 }
 @media (prefers-color-scheme: dark) {
@@ -435,7 +435,6 @@ input[type='file']::-webkit-file-upload-button {
     font-size: var(--fish-font-size);
     padding: 10px 16px;
     transition: 0.5s background-color;
-    margin: 0;
     color: black;
 }
 .btn:hover,
@@ -491,7 +490,6 @@ pre code {
     }
 }
 kbd {
-    display: inline-block;
     background-color: #050505;
     color: var(--fish-white);
     padding: 0.25em 0.5em;
@@ -736,7 +734,6 @@ input[type='radio']::before {
     width: 1em;
     height: 1em;
     border-radius: 50%;
-    border: solid 0.1em var(--fish-input-color);
 }
 input[type='radio']:checked::before {
     border: solid 0.25em var(--fish-primary);

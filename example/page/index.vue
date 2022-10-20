@@ -26,10 +26,3 @@
         <router-link class="btn" to="/other">Others</router-link>
     </div>
 </template>
-
-<style>
-.btn-group * + * {
-    margin-left: 6px;
-    margin-top: 6px;
-}
-</style>
