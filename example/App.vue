@@ -1,5 +1,5 @@
 <template>
-    <div style="max-width: 800px; margin: auto; padding: 10px 20px">
+    <div class="container">
         <header>
             <hgroup>
                 <router-link to="/">

@@ -7,9 +7,7 @@
     <h6>Heading 6</h6>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et rerum
-        reiciendis at, quia perferendis iure unde libero facere corporis,
-        praesentium iusto illo similique est vitae deserunt. Officia aspernatur
-        at exercitationem!
+        reiciendis at, quia perferendis iur
     </p>
     <ol>
         <li>first item</li>
@@ -21,8 +19,8 @@
     </ul>
     <blockquote>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea est, natus,
-        quis a optio illum tempora neque id fuga aliquid possimus! Laboriosam
-        inventore illum rem repellat qui adipisci totam consequuntur.
+        quis a opti
+        <cite>- Lorem</cite>
     </blockquote>
     <p>There's a link point to <a href="https://google.com">bing.com</a></p>
     <table>

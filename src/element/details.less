@@ -3,10 +3,14 @@ details {
     background-color: var(--fish-white);
     padding: 1em;
     border-radius: var(--fish-radius);
-}
 
-@media (prefers-color-scheme: dark) {
-    details {
+    &[open] {
+        & summary {
+            margin-bottom: 1em;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
         background-color: var(--fish-dark);
     }
 }

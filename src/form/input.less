@@ -7,7 +7,7 @@ select {
     padding: 0.5em;
     border-style: solid;
     border-color: var(--fish-input-color);
-    border-width: 1.5px;
+    border-width: 2px;
     border-radius: var(--fish-radius);
     font-size: var(--fish-font-size);
     background-color: transparent;
@@ -19,11 +19,8 @@ select {
             color: transparent;
         }
     }
-}
 
-@media (prefers-color-scheme: dark) {
-    input,
-    select {
+    @media (prefers-color-scheme: dark) {
         background-color: var(--fish-dark);
         color: var(--fish-font-color);
         border-color: transparent;

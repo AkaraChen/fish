@@ -1,4 +1,4 @@
-.btn {
-    margin-right: 6px !important;
-    margin-top: 6px !important;
+.btn-group > .btn {
+    margin-right: 0.3em;
+    margin-top: 0.3em;
 }
