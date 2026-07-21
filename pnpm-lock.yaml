@@ -8,7 +8,7 @@ specifiers:
   husky: 8.0.3
   less: 4.1.3
   parcel: 2.8.3
-  prettier: 2.8.4
+  prettier: 3.9.6
   vue: 3.2.47
   vue-router: 4.1.6
 
@@ -20,7 +20,7 @@ devDependencies:
   husky: 8.0.3
   less: 4.1.3
   parcel: 2.8.3
-  prettier: 2.8.4
+  prettier: 3.9.6
   vue: 3.2.47
   vue-router: 4.1.6_vue@3.2.47
 
@@ -2194,9 +2194,9 @@ packages:
       posthtml-render: 3.0.0
     dev: true
 
-  /prettier/2.8.4:
-    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
-    engines: {node: '>=10.13.0'}
+  /prettier/3.9.6:
+    resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
